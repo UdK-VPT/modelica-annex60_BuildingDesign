@@ -1,9 +1,9 @@
-within Annex60.Experimental.SolarHeatingSystem.Interfaces;
+within SolarHeatingSystem.Interfaces;
 connector MoisturePort2D
   "Port for moisture transfer in 2 dimensions (base connector type)"
   parameter Integer nY = 1 "Number of surface elements in the y dimension";
   parameter Integer nZ = 1 "Number of surface elements in the z dimension";
-  Annex60.Experimental.SolarHeatingSystem.Interfaces.MoisturePort moisturePort[nY,nZ];
+  SolarHeatingSystem.Interfaces.MoisturePort moisturePort[nY,nZ];
     annotation(defaultComponentName = "moisturePort2D",
     Icon(coordinateSystem(preserveAspectRatio=true, extent={{-100,-100},{100,100}}), graphics={
     Rectangle(extent={{-100,100},{100,-100}},lineColor={120,0,120},fillColor={120,0,120},

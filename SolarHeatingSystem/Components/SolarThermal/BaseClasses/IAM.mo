@@ -1,4 +1,4 @@
-within Annex60.Experimental.SolarHeatingSystem.Components.SolarThermal.BaseClasses;
+within SolarHeatingSystem.Components.SolarThermal.BaseClasses;
 model IAM
   annotation (Documentation(info="<html>
 The IAM is defined as the efficiency at the given incidence angle divided by the eddiciency at normal incidence and is thus equal to 1 for normal incidence of the direct radiation.

@@ -1,4 +1,4 @@
-within Annex60.Experimental.SolarHeatingSystem;
+within SolarHeatingSystem;
 package Interfaces "Package with base and complex connector types of the library"
   extends Modelica.Icons.InterfacesPackage;
   // Air change rate

@@ -1,6 +1,6 @@
-within Annex60.Experimental.SolarHeatingSystem.Components.SolarThermal.Data.Collectors.ComercialsCollectors.FlatPlate;
+within SolarHeatingSystem.Components.SolarThermal.Data.Collectors.ComercialsCollectors.FlatPlate;
 record AgenaAZUR8plus_AC28H =
-    Annex60.Experimental.SolarHeatingSystem.Components.SolarThermal.Data.Collectors.CollectorPartial
+    SolarHeatingSystem.Components.SolarThermal.Data.Collectors.CollectorPartial
     (
     final IAMC=0.94,
     final C_A = 6800/2.441,

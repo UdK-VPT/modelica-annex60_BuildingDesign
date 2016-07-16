@@ -1,4 +1,4 @@
-within Annex60.Experimental.SolarHeatingSystem.Interfaces;
+within SolarHeatingSystem.Interfaces;
 connector HeatPorts
   "Port for heat transfer, large icon to be used for vectors of HeatPorts (base connector type)"
   extends Modelica.Thermal.HeatTransfer.Interfaces.HeatPort;

@@ -1,3 +1,3 @@
-within Annex60.Experimental.SolarHeatingSystem.Components.SolarThermal.Data.Collectors;
+within SolarHeatingSystem.Components.SolarThermal.Data.Collectors;
 package ComercialsCollectors
 end ComercialsCollectors;

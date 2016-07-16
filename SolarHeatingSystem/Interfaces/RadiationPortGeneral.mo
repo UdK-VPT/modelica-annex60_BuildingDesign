@@ -1,4 +1,4 @@
-within Annex60.Experimental.SolarHeatingSystem.Interfaces;
+within SolarHeatingSystem.Interfaces;
 connector RadiationPortGeneral
   "Port for solar radiation transport (base connector type)"
   Modelica.SIunits.RadiantEnergyFluenceRate IrrDir

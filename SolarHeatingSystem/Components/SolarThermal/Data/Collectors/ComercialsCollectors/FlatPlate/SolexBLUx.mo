@@ -1,6 +1,6 @@
-within Annex60.Experimental.SolarHeatingSystem.Components.SolarThermal.Data.Collectors.ComercialsCollectors.FlatPlate;
+within SolarHeatingSystem.Components.SolarThermal.Data.Collectors.ComercialsCollectors.FlatPlate;
 record SolexBLUx =
-  Annex60.Experimental.SolarHeatingSystem.Components.SolarThermal.Data.Collectors.CollectorPartial
+  SolarHeatingSystem.Components.SolarThermal.Data.Collectors.CollectorPartial
     (
     final IAMC=0.87,
     final C_A = 6600/2.305,

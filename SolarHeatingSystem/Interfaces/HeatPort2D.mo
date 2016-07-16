@@ -1,4 +1,4 @@
-within Annex60.Experimental.SolarHeatingSystem.Interfaces;
+within SolarHeatingSystem.Interfaces;
 connector HeatPort2D
   "Port for heat transfer in 2 dimensions (base connector type)"
   parameter Integer nY = 1 "Number of surface elements in the y dimension";

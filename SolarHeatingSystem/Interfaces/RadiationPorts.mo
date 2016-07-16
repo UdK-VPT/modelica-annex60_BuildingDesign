@@ -1,7 +1,7 @@
-within Annex60.Experimental.SolarHeatingSystem.Interfaces;
+within SolarHeatingSystem.Interfaces;
 connector RadiationPorts
   "Port for solar radiation transport, large icon to be used for vectors of RadiationPorts (base connector type)"
-  extends Annex60.Experimental.SolarHeatingSystem.Interfaces.RadiationPortGeneral;
+  extends SolarHeatingSystem.Interfaces.RadiationPortGeneral;
   annotation(defaultComponentName="flowPorts",Diagram(coordinateSystem(preserveAspectRatio=false,extent={{-50,-200},{50,200}},grid={1,1},initialScale=0.2), graphics={
   Text(extent={{-75,130},{75,100}}, textString="%name"),
   Rectangle(extent={{25,-100},{-25,100}},lineColor={255,128,0}),

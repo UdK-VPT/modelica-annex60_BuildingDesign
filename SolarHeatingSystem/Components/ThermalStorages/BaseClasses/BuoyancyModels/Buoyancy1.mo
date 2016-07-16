@@ -1,7 +1,7 @@
 within SolarHeatingSystem.Components.ThermalStorages.BaseClasses.BuoyancyModels;
 model Buoyancy1
 protected
-  extends Annex60.Experimental.SolarHeatingSystem.Components.ThermalStorages.BaseClasses.BuoyancyModels.PartialBuoyancy;
+  extends SolarHeatingSystem.Components.ThermalStorages.BaseClasses.BuoyancyModels.PartialBuoyancy;
   parameter Modelica.SIunits.ThermalConductance G = if nEle <10 then 0.8*nEle+16 else 26-0.2571*nEle
     "Equivalent thermal conductance between layers";
   parameter Real exp_nEle = 1.5

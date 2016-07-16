@@ -1,4 +1,4 @@
-within Annex60.Experimental.SolarHeatingSystem.Interfaces;
+within SolarHeatingSystem.Interfaces;
 connector FlowPorts
   "Port for fluid transport, large icon to be used for vectors of FlowPorts (base connector type)"
   extends Modelica.Fluid.Interfaces.FluidPort;

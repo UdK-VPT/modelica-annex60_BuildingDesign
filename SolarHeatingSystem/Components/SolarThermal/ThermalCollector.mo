@@ -1,4 +1,4 @@
-within Annex60.Experimental.SolarHeatingSystem.Components.SolarThermal;
+within SolarHeatingSystem.Components.SolarThermal;
 model ThermalCollector "Model of a solar thermal collector"
   extends Annex60.Fluid.Interfaces.PartialTwoPortInterface(
     show_T=true);
@@ -28,10 +28,10 @@ model ThermalCollector "Model of a solar thermal collector"
     annotation(Dialog(tab = "General", group = "Geometry"));
   parameter Modelica.SIunits.Length height = 1.0 "Height of the collector"
     annotation(Dialog(tab = "General", group = "Geometry"));
-  Annex60.Experimental.SolarHeatingSystem.Interfaces.Angle_degOutput angleDegTil
+  SolarHeatingSystem.Interfaces.Angle_degOutput angleDegTil
     "Tilt angle of the solar collector"
     annotation (Dialog(group="Geometry"), Placement(transformation(extent={{-10,-10},{10,10}},rotation=270,origin={-50,-90}),iconTransformation(extent={{-10,-10},{10,10}},rotation=270,origin={-50,-90})));
-  Annex60.Experimental.SolarHeatingSystem.Interfaces.Angle_degOutput angleDegAzi
+  SolarHeatingSystem.Interfaces.Angle_degOutput angleDegAzi
     "Azimuth angle of the solar collector: South=0 deg West=90 deg East=-90 deg"
     annotation (Dialog(group="Geometry"), Placement(transformation(extent={{-10,-10},{10,10}},rotation=270,origin={-70,-90}), iconTransformation(extent={{-10,-10},{10,10}},rotation=270,origin={-70,-90})));
   parameter Modelica.SIunits.MassFlowRate m_flow_nominal
@@ -50,7 +50,7 @@ model ThermalCollector "Model of a solar thermal collector"
     nout=nEle) "replicate Qrad value"
     annotation (Placement(transformation(extent={{-70,-80},{-50,-60}})));
   replaceable
-    Annex60.Experimental.SolarHeatingSystem.Components.SolarThermal.Data.Collectors.CollectorPartial
+    SolarHeatingSystem.Components.SolarThermal.Data.Collectors.CollectorPartial
                                                                                                         collectorData
     "Data about the thermal solar collector"
     annotation(HideResult=true, Dialog(tab = "General"), Evaluate=true, choicesAllMatching=true);
@@ -100,7 +100,7 @@ model ThermalCollector "Model of a solar thermal collector"
     annotation (Placement(transformation(extent={{-60,-30},{-40,-10}})));
   Modelica.Blocks.Interfaces.RealInput GSC_in if use_GSC_in
     annotation (Placement(transformation(extent={{-100,40},{-60,80}}), iconTransformation(extent={{-100,40},{-60,80}})));
-  Annex60.Experimental.SolarHeatingSystem.Interfaces.Temp_KOutput TSeg[nEle] = vol.T
+  SolarHeatingSystem.Interfaces.Temp_KOutput TSeg[nEle] = vol.T
     "Temperature of each collector element"
     annotation (Placement(transformation(extent={{-10,-10},{10,10}},rotation=270,origin={32,-90}), iconTransformation(extent={{-10,-10},{10,10}},rotation=270,origin={32,-90})));
 protected
@@ -143,7 +143,7 @@ equation
   if not use_GSC_in then
     GSC_internal = GSC_constant;
   end if;
-  IAM = Annex60.Experimental.SolarHeatingSystem.SmoothFunctions.softcut_lower(1.0 + (IAMC - 1.0)/0.5557 * (1.0 / Modelica.Math.cos(inc-0.0001) - 1.0),0.0,0.01);
+  IAM = SolarHeatingSystem.SmoothFunctions.softcut_lower(1.0 + (IAMC - 1.0)/0.5557 * (1.0 / Modelica.Math.cos(inc-0.0001) - 1.0),0.0,0.01);
   IrrTot = IrrDir * (1.0 - GSC_internal) * IAM + IrrDif;
   connect(QCon.y, sumConRad.u[1]) annotation (Line(
       points={{-79,-30},{-70,-30},{-70,-21},{-62,-21}},

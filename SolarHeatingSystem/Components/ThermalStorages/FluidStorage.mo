@@ -43,10 +43,10 @@ model FluidStorage
     "Normal heat transfer due to conductivity"
     annotation (Placement(transformation(extent={{-10,10},{10,-10}},origin={-20,-60})));
   replaceable
-    Annex60.Experimental.SolarHeatingSystem.Components.ThermalStorages.BaseClasses.BuoyancyModels.PartialBuoyancy
+    SolarHeatingSystem.Components.ThermalStorages.BaseClasses.BuoyancyModels.PartialBuoyancy
                                                                                                       HeatBuoyancy(
     nEle=nEle) constrainedby
-    Annex60.Experimental.SolarHeatingSystem.Components.ThermalStorages.BaseClasses.BuoyancyModels.PartialBuoyancy(
+    SolarHeatingSystem.Components.ThermalStorages.BaseClasses.BuoyancyModels.PartialBuoyancy(
     nEle=nEle) "Accounting for buoyancy effect"
     annotation (choicesAllMatching=true, Placement(transformation(extent={{-10,-10},{10,10}},origin={-22,-2})),Dialog(tab="Advanced",group="Buoyancy"));
   Modelica.Fluid.Interfaces.FluidPorts_a port_a[nEle - 2](

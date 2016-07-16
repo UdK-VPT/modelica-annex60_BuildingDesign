@@ -1,6 +1,6 @@
-within Annex60.Experimental.SolarHeatingSystem.Components.SolarThermal.Data.Collectors;
+within SolarHeatingSystem.Components.SolarThermal.Data.Collectors;
 record FlatSolarCollector1 =
-    Annex60.Experimental.SolarHeatingSystem.Components.SolarThermal.Data.Collectors.CollectorPartial
+    SolarHeatingSystem.Components.SolarThermal.Data.Collectors.CollectorPartial
     (
     IAMC=0.88,
     V_A=1.5/1.8/980,

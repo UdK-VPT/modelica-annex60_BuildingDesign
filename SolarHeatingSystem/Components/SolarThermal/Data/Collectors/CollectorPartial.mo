@@ -1,4 +1,4 @@
-within Annex60.Experimental.SolarHeatingSystem.Components.SolarThermal.Data.Collectors;
+within SolarHeatingSystem.Components.SolarThermal.Data.Collectors;
 record CollectorPartial
   extends Modelica.Icons.Record;
   parameter Real C_0

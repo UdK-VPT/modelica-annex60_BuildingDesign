@@ -1,7 +1,7 @@
-within Annex60.Experimental.SolarHeatingSystem.Interfaces;
+within SolarHeatingSystem.Interfaces;
 connector MoisturePorts
   "Port for moisture transfer, large icon to be used for vectors of MoisturePorts (base connector type)"
-  extends Annex60.Experimental.SolarHeatingSystem.Interfaces.MoisturePortGeneral;
+  extends SolarHeatingSystem.Interfaces.MoisturePortGeneral;
   annotation (defaultComponentName="moisturePorts",Icon(coordinateSystem(preserveAspectRatio=false,extent={{-200,-50},{200,50}},grid={1,1},initialScale=0.2), graphics={
   Rectangle(extent={{-201,50},{200,-50}},lineColor={0,0,255},fillColor={255,255,255},
             fillPattern = FillPattern.Solid),

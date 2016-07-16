@@ -1,7 +1,7 @@
-within Annex60.Experimental.SolarHeatingSystem.Interfaces;
+within SolarHeatingSystem.Interfaces;
 connector RadiationPort
   "Port for solar radiation transport, small icon to be used for single RadiationPort (base connector type)"
-  extends Annex60.Experimental.SolarHeatingSystem.Interfaces.RadiationPortGeneral;
+  extends SolarHeatingSystem.Interfaces.RadiationPortGeneral;
   annotation(defaultComponentName = "radiationPort",
   Icon(coordinateSystem(preserveAspectRatio=true, extent={{-100,-100},{100,100}}), graphics={
   Ellipse(extent={{-100,100},{100,-100}}, fillColor={255,128,0},fillPattern=FillPattern.Solid,pattern=LinePattern.None)}),

@@ -1,4 +1,4 @@
-within Annex60.Experimental.SolarHeatingSystem.Components;
+within SolarHeatingSystem.Components;
 package SolarThermal
   "Package with models of solar thermal collectors"
   extends Modelica.Icons.Package;

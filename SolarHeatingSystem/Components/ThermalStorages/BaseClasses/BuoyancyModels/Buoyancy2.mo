@@ -5,7 +5,7 @@ model Buoyancy2
   parameter Real exp_nEle
     "Exponent for nEle";
 protected
-  extends nnex60.Experimental.SolarHeatingSystem.Components.ThermalStorages.BaseClasses.BuoyancyModels.PartialBuoyancy;
+  extends SolarHeatingSystem.Components.ThermalStorages.BaseClasses.BuoyancyModels.PartialBuoyancy;
 equation
   for i in 1:nEle-1 loop
     Q_flow[i] = G * dT[i] * nEle^exp_nEle;

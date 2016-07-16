@@ -1,4 +1,4 @@
-within Annex60.Experimental.SolarHeatingSystem.Interfaces;
+within SolarHeatingSystem.Interfaces;
 connector MoisturePortGeneral
   "Port for moisture transfer (base connector type)"
   Modelica.SIunits.MassFraction x(start = 0.01) "Absolute moisture";

@@ -1,0 +1,4 @@
+﻿Advanced.AutoFormatting:=false;
+OutputCPUtime:=true;
+openModel("./iea-annex60/Annex60/package.mo");
+openModel("../../SolarHeatingSystem/package.mo");
