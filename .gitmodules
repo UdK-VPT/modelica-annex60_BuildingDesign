@@ -1,0 +1,3 @@
+[submodule "iea-annex60"]
+	path = iea-annex60
+	url = https://github.com/iea-annex60/modelica-annex60.git
