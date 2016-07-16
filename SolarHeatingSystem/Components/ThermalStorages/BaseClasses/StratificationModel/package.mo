@@ -1,0 +1,3 @@
+within SolarHeatingSystem.Components.ThermalStorages.BaseClasses;
+package StratificationModel
+end StratificationModel;
