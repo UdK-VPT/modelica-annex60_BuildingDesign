@@ -7,9 +7,9 @@ model SystemModel
   parameter Real UValueRoof = 0.34;
   parameter Real UValueWalls = 1.0/(1.0/25.0+0.2/1.35+thicknessInsulation/0.04+1.0/7.692);
   // Optimization parameters
-  parameter Modelica.SIunits.Volume VStorage(min = 1.0, max = 40.0) = 20.0;
-  parameter Modelica.SIunits.Area ACollector(min = 4.0, max = 40.0) = 40.0;
-  parameter Modelica.SIunits.Length thicknessInsulation(min = 0.06, max = 0.30) = 0.2;
+  parameter Modelica.SIunits.Volume VStorage(min = 1.0, max = 40.0) = 10.0;
+  parameter Modelica.SIunits.Area ACollector(min = 4.0, max = 40.0) = 20.0;
+  parameter Modelica.SIunits.Length thicknessInsulation(min = 0.06, max = 0.30) = 0.1;
   // Optimization parameters
   parameter Real lifetimeCollector(unit = "a") = 20.0;
   parameter Real costCollector(unit = "Euro/a") = 200.0*ACollector/lifetimeCollector;
@@ -58,7 +58,7 @@ model SystemModel
   Annex60.Fluid.HeatExchangers.Radiators.RadiatorEN442_2 radiator(
     redeclare package Medium = Medium1,
     m_flow_nominal=m_flow_nominal,
-    Q_flow_nominal=4000.0,
+    Q_flow_nominal=10000.0,
     VWat=0.005,
     mDry=0.0001,
     nEle=5,
