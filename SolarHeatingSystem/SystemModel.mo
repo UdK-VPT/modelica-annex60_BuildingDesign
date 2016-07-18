@@ -20,6 +20,7 @@ model SystemModel
   parameter Real lifetimeInsulation(unit = "a") = 30.0;
   parameter Real costInsulation(unit = "Euro/a") = sum(building.AExt)*(2.431*thicknessInsulation*100.0+87.35)/lifetimeInsulation
     annotation(Documentation(info="<html><p>BMVBS-Online-Publikation, Nr. 07/2012 Kosten energierelevanter Bau- und Anlagenteile bei der energetischen Modernisierung von WohngebÃÂ¤uden</p>/html>"));
+  parameter Real solarfractionSet(unit = "-") = 0.5;
   parameter Real penaltyFactor(unit = "Euro/a") = 1000.0;
   Modelica.SIunits.Energy QHeater(start = 0.0);
   Modelica.SIunits.Energy QRadiator(start = 0.0001);
@@ -416,7 +417,7 @@ equation
   der(QRadiator) = - radiator.Q_flow;
   der(QHeater) = heater.Q_flow;
   solarfraction = (QRadiator - QHeater)/ QRadiator;
-  costfunction = costCollector + costStorage + costInsulation + costHeaterEnergy + penaltyFactor * (1.0 - solarfraction);
+  costfunction = costCollector + costStorage + costInsulation + costHeaterEnergy + penaltyFactor * (solarfractionSet - solarfraction);
 
   connect(radiator.port_b, pipe1.port_a) annotation (Line(
       points={{8,-12},{12,-12}},
