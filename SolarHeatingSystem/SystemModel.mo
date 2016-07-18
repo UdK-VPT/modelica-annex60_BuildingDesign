@@ -14,7 +14,7 @@ model SystemModel
   parameter Real lifetimeCollector(unit = "a") = 20.0;
   parameter Real costCollector(unit = "Euro/a") = 200.0*ACollector/lifetimeCollector;
   parameter Real lifetimeStorage(unit = "a") = 20.0;
-  parameter Real costStorage(unit = "Euro/a") = (1649.81*VStorage^(-0.464))/lifetimeStorage;
+  parameter Real costStorage(unit = "Euro/a") = 1649.81*VStorage^(-0.464)*VStorage/lifetimeStorage;
   parameter Real energyPrice(unit = "Euro/kWh") = 0.08;
   Real costHeaterEnergy(unit = "Euro/a") = energyPrice*QHeater/3600.0/1000.0;
   parameter Real lifetimeInsulation(unit = "a") = 30.0;
