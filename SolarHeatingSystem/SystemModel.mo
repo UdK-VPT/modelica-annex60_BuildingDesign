@@ -26,10 +26,10 @@ model SystemModel
   Real solarfraction(unit = "-");
   Real costfunction(unit = "Euro/a");
 
-  package Medium1 = Annex60.Media.Water(
+  package Medium1 = Annex60.Media.Water (
     T_min = 273.15 - 40.0,
     T_max = 273.15 + 300.0);
-  package Medium2 = Modelica.Media.Air.SimpleAir(
+  package Medium2 = Modelica.Media.Air.SimpleAir (
     T_min = 273.15 - 40.0,
     T_max = 273.15 + 100.0);
   parameter Modelica.SIunits.MassFlowRate m_flow_nominal= 0.1;
@@ -215,11 +215,11 @@ model SystemModel
     annotation (Placement(transformation(extent={{-16,48},{-4,60}})));
   Annex60.BoundaryConditions.WeatherData.ReaderTMY3 weaDat(
     calTSky=Annex60.BoundaryConditions.Types.SkyTemperatureCalculation.HorizontalRadiation,
-    //filNam="modelica://Annex60/Resources/weatherdata/USA_CA_San.Francisco.Intl.AP.724940_TMY3.mos",
     filNam= "modelica://Annex60/Resources/weatherdata/USA_IL_Chicago-OHare.Intl.AP.725300_TMY3.mos",
     computeWetBulbTemperature=false)
     "Weather data reader"
     annotation (Placement(transformation(extent={{-96,180},{-76,200}})));
+    //filNam="modelica://Annex60/Resources/weatherdata/USA_CA_San.Francisco.Intl.AP.724940_TMY3.mos",
   Annex60.BoundaryConditions.SolarIrradiation.DiffusePerez HDifTil[4](
     each outSkyCon=true,
     each outGroCon=true,
@@ -408,6 +408,10 @@ model SystemModel
   Modelica.Blocks.Logical.LessThreshold lessThreshold(
     threshold=273.15 + 100.0)
     annotation (Placement(transformation(extent={{116,-52},{108,-44}})));
+  Interfaces.GenOptInterface genOptInterface
+    annotation (Placement(transformation(extent={{110,200},{130,220}})));
+  Modelica.Blocks.Sources.RealExpression realExpression(y=costfunction)
+    annotation (Placement(transformation(extent={{80,218},{100,238}})));
 equation
   der(QRadiator) = - radiator.Q_flow;
   der(QHeater) = heater.Q_flow;
@@ -679,6 +683,8 @@ equation
   connect(storage.T[1], lessThreshold.u) annotation (Line(points={{40.6,-18.9},{
         38,-18.9},{38,-18},{34,-18},{34,-76},{120,-76},{120,-48},{116.8,-48}},color={0,0,127}));
 
+  connect(realExpression.y, genOptInterface.costFunction)
+    annotation (Line(points={{101,228},{120,228},{120,218}}, color={0,0,127}));
   annotation(experiment(StartTime=15638400, StopTime=47174400),
     Diagram(coordinateSystem(preserveAspectRatio=false, extent={{-100,-100},{140,240}},initialScale=0.1),graphics={
     Text(extent={{-76,-50},{114,-124}},lineColor={0,0,255},textString="Solar heating system with low-order building model")}),
