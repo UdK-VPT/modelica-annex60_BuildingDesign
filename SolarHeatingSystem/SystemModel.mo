@@ -254,7 +254,7 @@ model SystemModel
     nInt=1,
     RInt={0.00028734526051},
     CInt={43260210.4851},
-    RWin=0.0258840291977*1.0/UValueWalls,
+    RWin=0.0258840291977*1.0/UValueWindows,
     RExtRem=0.0123709459756*0.35/UValueWalls,
     AFloor=73.44,
     alphaFloor=1.7,
