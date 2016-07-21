@@ -1,0 +1,61 @@
+
+Vary{
+
+  Parameter{
+  Name = VStorage;
+  Min = 1.0;
+  Ini = 1.0;
+  Max = 40.0;
+  Step = 8.0;
+  }
+  Parameter{
+  Name = ACollector;
+  Min = 4.0;
+  Ini = 4.0;
+  Max = 40.0;
+  Step = 8.0;
+  }
+  Parameter{
+  Name = thicknessInsulation;
+  Min = 0.06;
+  Ini = 0.06;
+  Max = 0.3;
+  Step = 0.06;
+  }
+}
+
+OptimizationSettings{
+
+  MaxIte = 10000;
+
+  MaxEqualResults = 1000;
+
+  WriteStepNumber = false;
+
+  UnitsOfExecution = 7;
+
+}
+
+
+Algorithm{
+
+  Main = GPSPSOCCHJ;
+  NeighborhoodTopology = gbest;
+  NeighborhoodSize = 4;
+  NumberOfParticle = 7;
+  NumberOfGeneration = 4;
+  Seed = 3;
+  CognitiveAcceleration = 1.2;
+  SocialAcceleration = 0.7;
+  MaxVelocityGainContinuous = 1.3;
+  MaxVelocityDiscrete = 1.1;
+  ConstrictionGain = 0.9;
+  MeshSizeDivider = 2;
+ 
+ InitialMeshSizeExponent = 0;
+ 
+ MeshSizeExponentIncrement = 1;
+ 
+ NumberOfStepReduction = 4;
+
+}
