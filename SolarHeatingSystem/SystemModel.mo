@@ -19,7 +19,7 @@ model SystemModel
   parameter Real lifetimeStorage(unit = "a") = 20.0;
   parameter Real costStorage(unit = "Euro/a") = 1649.81*VStorage^(-0.464)*VStorage/lifetimeStorage;
   parameter Real energyPrice(unit = "Euro/kWh") = 0.08;
-  Real costHeaterEnergy(unit = "Euro/a") = energyPrice*QHeater/3600.0/1000.0/simulationpriod;
+  Real costHeaterEnergy(unit = "Euro/a") = energyPrice*QHeaterEval/3600.0/1000.0;
   parameter Real lifetimeInsulation(unit = "a") = 30.0;
   parameter Real costInsulation(unit = "Euro/a") = sum(building.AExt)*(2.431*thicknessInsulation*100.0+87.35)/lifetimeInsulation
     annotation(Documentation(info="<html><p>BMVBS-Online-Publikation, Nr. 07/2012 Kosten energierelevanter Bau- und Anlagenteile bei der energetischen Modernisierung von WohngebÃÂ¤uden</p>/html>"));
@@ -28,9 +28,13 @@ model SystemModel
   Modelica.SIunits.Energy QHeater(start = 0.0);
   Modelica.SIunits.Energy QRadiator(start = 0.0001);
   Real solarfraction(unit = "-");
-  Real costPenalty(unit = "Euro/a") = penaltyFactor * (solarfractionSet - solarfraction);
+  Real costPenalty(unit = "Euro/a") = if (solarfractionSet - solarfractionEval) > 0.0 then penaltyFactor * (solarfractionSet - solarfractionEval) else 0.0;
   Real costfunction(unit = "Euro/a");
-  parameter Real simulationpriod(unit = "a") = 2.0;
+  parameter Real simulationPeriod(unit = "a") = 2.0;
+  parameter Real evaluationStart(unit = "s") = 15638400 + (simulationPeriod - 1.0) * 31536000;
+  Modelica.SIunits.Energy QHeaterEval(start = 0.0);
+  Modelica.SIunits.Energy QRadiatorEval(start = 0.0001);
+  Real solarfractionEval(unit = "-");
 
   package Medium1 = Annex60.Media.Water (
     T_min = 273.15 - 40.0,
@@ -221,11 +225,11 @@ model SystemModel
     annotation (Placement(transformation(extent={{-16,48},{-4,60}})));
   Annex60.BoundaryConditions.WeatherData.ReaderTMY3 weaDat(
     calTSky=Annex60.BoundaryConditions.Types.SkyTemperatureCalculation.HorizontalRadiation,
-    //filNam= "modelica://Annex60/Resources/weatherdata/USA_IL_Chicago-OHare.Intl.AP.725300_TMY3.mos",
-    filNam="modelica://Annex60/Resources/weatherdata/USA_CA_San.Francisco.Intl.AP.724940_TMY3.mos",
+    filNam="modelica://Annex60/Resources/weatherdata/USA_IL_Chicago-OHare.Intl.AP.725300_TMY3.mos",
     computeWetBulbTemperature=false)
     "Weather data reader"
     annotation (Placement(transformation(extent={{-96,180},{-76,200}})));
+    //filNam= "modelica://Annex60/Resources/weatherdata/USA_CA_San.Francisco.Intl.AP.724940_TMY3.mos",
   Annex60.BoundaryConditions.SolarIrradiation.DiffusePerez HDifTil[4](
     each outSkyCon=true,
     each outGroCon=true,
@@ -422,7 +426,11 @@ equation
   der(QRadiator) = - radiator.Q_flow;
   der(QHeater) = heater.Q_flow;
   solarfraction = (QRadiator - QHeater)/ QRadiator;
-  costfunction = costCollector + costStorage + costInsulation + costHeaterEnergy + costPenalty;
+
+  der(QHeaterEval) = if time < evaluationStart then 0.0 else heater.Q_flow;
+  der(QRadiatorEval) = if time < evaluationStart then 0.0 else - radiator.Q_flow;
+  solarfractionEval = if time < evaluationStart then 0.0 else (QRadiatorEval - QHeaterEval)/ QRadiatorEval;
+  costfunction = if time < evaluationStart then 0.0 else costCollector + costStorage + costInsulation + costHeaterEnergy + costPenalty;
 
   connect(radiator.port_b, pipe1.port_a) annotation (Line(
       points={{8,-12},{12,-12}},
@@ -693,8 +701,8 @@ equation
     annotation (Line(points={{101,228},{120,228},{120,218}}, color={0,0,127}));
 
   //annotation(Documentation(info="one year"),experiment(StartTime=15638400, StopTime=47174400),
-  annotation(Documentation(info="two years"),experiment(StartTime=15638400, StopTime=78710400),
   //annotation(Documentation(info="three years"),experiment(StartTime=15638400, StopTime=110246400),
+  annotation(Documentation(info="two years"),experiment(StartTime=15638400, StopTime=78710400),
     Diagram(coordinateSystem(preserveAspectRatio=false, extent={{-100,-100},{140,240}},initialScale=0.1),graphics={
     Text(extent={{-76,-50},{114,-124}},lineColor={0,0,255},textString="Solar heating system with low-order building model")}),
     Icon(coordinateSystem(preserveAspectRatio=false, extent={{-100,-40},{100,40}})));
