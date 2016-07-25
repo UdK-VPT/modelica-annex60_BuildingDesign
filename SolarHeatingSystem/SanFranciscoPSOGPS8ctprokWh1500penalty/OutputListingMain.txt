@@ -1,0 +1,71 @@
+GenOpt(R) Version 3.1.0, December 8, 2011
+
+Lawrence Berkeley National Laboratory
+http://simulationresearch.lbl.gov
+Michael Wetter, MWetter@lbl.gov
+
+GenOpt Copyright (c) 1998-2011, The Regents of the
+University of California, through Lawrence Berkeley
+National Laboratory (subject to receipt of any 
+required approvals from the U.S. Dept. of Energy).
+All rights reserved.
+_______________________________________________________________
+
+Results of GPSPSOCCHJ algorithm
+Start time: Fri Jul 22 14:17:22 CEST 2016
+
+Main Iterations
+
+
+Simulation Number	Main Iteration	Step Number	f(x)	VStorage	ACollector	thicknessInsulation
+1	1	1	1210.9695329135395	1.0	4.0	0.06	Generation 1.
+2	2	1	1318.987230173013	33.0	4.0	0.06	Generation 1.
+3	3	1	1717.3120941730124	33.0	12.0	0.24	Generation 1.
+4	4	1	1637.3120941730124	33.0	4.0	0.24	Generation 1.
+5	5	1	1823.4203821730127	33.0	12.0	0.3	Generation 1.
+6	6	1	1903.4203821730127	33.0	20.0	0.3	Generation 1.
+7	7	1	1227.6704865365189	9.0	20.0	0.06	Generation 1.
+7	8	1	1210.9695329135395	1.0	4.0	0.06	Generation 2.
+8	9	1	1244.6770799138505	25.0	4.0	0.06	Generation 2.
+9	10	1	1536.8936559138504	25.0	12.0	0.18	Generation 2.
+10	11	1	1456.8936559138504	25.0	4.0	0.18	Generation 2.
+11	12	1	1643.0019439138505	25.0	12.0	0.24	Generation 2.
+11	13	1	1643.0019439138505	25.0	12.0	0.24	Generation 2.
+12	14	1	1147.6560736832723	9.0	12.0	0.06	Generation 2.
+12	15	1	1210.9695329135395	1.0	4.0	0.06	Generation 3.
+13	16	1	1158.1887880515537	17.0	4.0	0.06	Generation 3.
+14	17	1	1344.2970760515539	17.0	12.0	0.12	Generation 3.
+15	18	1	1264.2970760515539	17.0	4.0	0.12	Generation 3.
+16	19	1	1450.4053640515538	17.0	12.0	0.18	Generation 3.
+16	20	1	1450.4053640515538	17.0	12.0	0.18	Generation 3.
+16	21	1	1147.6560736832723	9.0	12.0	0.06	Generation 3.
+16	22	1	1147.6560736832723	9.0	12.0	0.06	Generation 4.
+17	23	1	1285.3753629263715	1.0	12.0	0.06	Generation 4.
+17	24	1	1285.3753629263715	1.0	12.0	0.06	Generation 4.
+17	25	1	1285.3753629263715	1.0	12.0	0.06	Generation 4.
+17	26	1	1285.3753629263715	1.0	12.0	0.06	Generation 4.
+17	27	1	1285.3753629263715	1.0	12.0	0.06	Generation 4.
+16	28	1	1147.6560736832723	9.0	12.0	0.06	Generation 4.
+18	29	1	1318.1887880515537	17.0	20.0	0.06	Generation 5.
+18	30	1	1147.6560736832723	9.0	12.0	0.06	Generation 5.
+19	31	1	1235.5002417430737	9.0	12.0	0.12	Generation 5.
+18	32	1	1147.6560736832723	9.0	12.0	0.06	Generation 5.
+20	33	1	1341.6085297430736	9.0	12.0	0.18	Generation 5.
+20	34	1	1341.6085297430736	9.0	12.0	0.18	Generation 5.
+18	35	1	1147.6560736832723	9.0	12.0	0.06	Generation 5.
+18	35	1	1147.6560736832723	9.0	12.0	0.06	Minimum point.
+18	36	1	1147.6560736832723	9.0	12.0	0.06	Minimum point of initialization.
+20	37	1	1147.6560736832723	9.0	12.0	0.06	Initial point.
+22	38	1	1067.8007750472061	9.0	4.0	0.06	Global search reduced cost.
+22	39	1	1067.8007750472061	9.0	4.0	0.06	Iteration step did not reduce cost. Reduce step size to '0.5'.
+25	40	1	1017.0140005986235	5.0	4.0	0.06	Global search reduced cost.
+25	41	1	1017.0140005986235	5.0	4.0	0.06	Iteration step did not reduce cost. Reduce step size to '0.25'.
+25	42	1	1017.0140005986235	5.0	4.0	0.06	Iteration step did not reduce cost. Reduce step size to '0.125'.
+35	43	1	1002.2435631090221	4.0	4.0	0.0675	Global search reduced cost.
+36	44	1	987.2119357953461	3.0	4.0	0.075	Global search reduced cost.
+42	45	1	973.12799258251	2.0	4.0	0.0825	Global search reduced cost.
+42	46	1	973.12799258251	2.0	4.0	0.0825	Iteration step did not reduce cost. Reduce step size to '0.0625'.
+53	47	1	972.9111496056923	2.0	4.0	0.08625	Global search reduced cost.
+57	48	1	966.236147641849	1.5	4.0	0.09375	Global search reduced cost.
+57	49	1	966.236147641849	1.5	4.0	0.09375	Iteration step did not reduce cost. Maximum number of step reductions reached.
+57	49	1	966.236147641849	1.5	4.0	0.09375	Minimum point.
