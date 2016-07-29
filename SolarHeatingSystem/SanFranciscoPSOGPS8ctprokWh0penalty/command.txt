@@ -10,8 +10,8 @@ Vary{
   }
   Parameter{
   Name = ACollector;
-  Min = 4.0;
-  Ini = 4.0;
+  Min = 1.0;
+  Ini = 1.0;
   Max = 40.0;
   Step = 8.0;
   }
@@ -43,7 +43,7 @@ Algorithm{
   NeighborhoodTopology = gbest;
   NeighborhoodSize = 4;
   NumberOfParticle = 7;
-  NumberOfGeneration = 5;
+  NumberOfGeneration = 4;
   Seed = 3;
   CognitiveAcceleration = 1.2;
   SocialAcceleration = 0.7;

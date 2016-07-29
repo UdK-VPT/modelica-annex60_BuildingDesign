@@ -1,2 +1,2 @@
 Objective function value
-f(x) = 2069.8132025757382
+f(x) = 932.78356081872005

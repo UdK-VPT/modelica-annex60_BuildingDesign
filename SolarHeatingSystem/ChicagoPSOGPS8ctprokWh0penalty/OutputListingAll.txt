@@ -1,0 +1,140 @@
+GenOpt(R) Version 3.1.0, December 8, 2011
+
+Lawrence Berkeley National Laboratory
+http://simulationresearch.lbl.gov
+Michael Wetter, MWetter@lbl.gov
+
+GenOpt Copyright (c) 1998-2011, The Regents of the
+University of California, through Lawrence Berkeley
+National Laboratory (subject to receipt of any 
+required approvals from the U.S. Dept. of Energy).
+All rights reserved.
+_______________________________________________________________
+
+Results of GPSPSOCCHJ algorithm
+Start time: Fri Jul 29 09:47:28 CEST 2016
+
+All Iterations
+
+
+Simulation Number	Main Iteration	Sub Iteration	Step Number	f(x)	VStorage	ACollector	thicknessInsulation
+1	1	1	1	1783.9507436517006	1.0	1.0	0.06	Generation 1.
+2	2	1	1	2199.311656209616	33.0	1.0	0.06	Generation 1.
+3	3	1	1	1914.2292246517075	33.0	9.0	0.24	Generation 1.
+4	4	1	1	2037.1128619348067	33.0	1.0	0.24	Generation 1.
+5	5	1	1	1984.6483893076695	33.0	9.0	0.3	Generation 1.
+6	6	1	1	2101.9642702079836	33.0	25.0	0.3	Generation 1.
+7	7	1	1	2012.9136954212536	9.0	25.0	0.06	Generation 1.
+7	8	1	1	1783.9507436517006	1.0	1.0	0.06	Generation 2.
+8	9	1	1	2126.918938637056	25.0	1.0	0.06	Generation 2.
+9	10	1	1	1824.4494716569645	25.0	9.0	0.18	Generation 2.
+10	11	1	1	1920.9964150891487	25.0	1.0	0.18	Generation 2.
+11	12	1	1	1872.8128519540044	25.0	9.0	0.24	Generation 2.
+12	13	1	1	1930.2277044420737	25.0	17.0	0.24	Generation 2.
+13	14	1	1	1955.222497183833	9.0	17.0	0.06	Generation 2.
+13	15	1	1	1783.9507436517006	1.0	1.0	0.06	Generation 3.
+14	16	1	1	2043.650505550366	17.0	1.0	0.06	Generation 3.
+15	17	1	1	1790.736643247499	17.0	9.0	0.12	Generation 3.
+16	18	1	1	1848.3136035163257	17.0	1.0	0.12	Generation 3.
+17	19	1	1	1786.549793812444	17.0	9.0	0.18	Generation 3.
+17	20	1	1	1786.549793812444	17.0	9.0	0.18	Generation 3.
+18	21	1	1	1913.80424483149	9.0	9.0	0.06	Generation 3.
+18	22	1	1	1783.9507436517006	1.0	1.0	0.06	Generation 4.
+18	23	1	1	1783.9507436517006	1.0	1.0	0.06	Generation 4.
+18	24	1	1	1783.9507436517006	1.0	1.0	0.06	Generation 4.
+18	25	1	1	1783.9507436517006	1.0	1.0	0.06	Generation 4.
+18	26	1	1	1783.9507436517006	1.0	1.0	0.06	Generation 4.
+18	27	1	1	1783.9507436517006	1.0	1.0	0.06	Generation 4.
+18	28	1	1	1783.9507436517006	1.0	1.0	0.06	Generation 4.
+18	28	2	1	1783.9507436517006	1.0	1.0	0.06	Minimum point.
+18	29	1	1	1783.9507436517006	1.0	1.0	0.06	Minimum point of initialization.
+18	30	1	1	1783.9507436517006	1.0	1.0	0.06	Initial point.
+19	31	1	1	1942.2008440938384	9.0	1.0	0.06	Cost not reduced at VStorage+dVStorage.
+20	31	2	1	1778.8381083044687	1.0	9.0	0.06	Cost reduced     at ACollector+dACollector.
+21	31	3	1	1601.6439850573108	1.0	9.0	0.12	Cost reduced     at thicknessInsulation+dthicknessInsulation.
+21	31	4	1	1601.6439850573108	1.0	9.0	0.12	Global search reduced cost.
+22	32	1	1	1651.830554301579	1.0	17.0	0.18	Exploration base, Delta = 1.0.
+23	32	2	1	1776.6958556313082	9.0	17.0	0.18	Cost not reduced at VStorage+dVStorage.
+24	32	3	1	1717.9536723399824	1.0	25.0	0.18	Cost not reduced at ACollector+dACollector.
+25	32	4	1	1597.3917092907827	1.0	9.0	0.18	Cost reduced     at ACollector-dACollector.
+26	32	5	1	1645.4738437643034	1.0	9.0	0.24	Cost not reduced at thicknessInsulation+dthicknessInsulation.
+26	32	6	1	1601.6439850573108	1.0	9.0	0.12	Cost not reduced at thicknessInsulation-dthicknessInsulation.
+25	32	7	1	1597.3917092907827	1.0	9.0	0.18	Global search reduced cost.
+26	33	1	1	1645.4738437643034	1.0	9.0	0.24	Exploration base, Delta = 1.0.
+27	33	2	1	1773.295199997771	9.0	9.0	0.24	Cost not reduced at VStorage+dVStorage.
+28	33	3	1	1627.4446758326858	1.0	1.0	0.24	Cost reduced     at ACollector-dACollector.
+29	33	4	1	1695.239247575019	1.0	1.0	0.3	Cost not reduced at thicknessInsulation+dthicknessInsulation.
+30	33	5	1	1583.4573135898	1.0	1.0	0.18	Cost reduced     at thicknessInsulation-dthicknessInsulation.
+30	33	6	1	1583.4573135898	1.0	1.0	0.18	Global search reduced cost.
+30	34	1	1	1583.4573135898	1.0	1.0	0.18	Cost reduced     at ACollector+dACollector.
+31	34	2	1	1593.2056443672059	1.0	1.0	0.12	Cost not reduced at thicknessInsulation-dthicknessInsulation.
+31	34	3	1	1627.4446758326858	1.0	1.0	0.24	Cost not reduced at thicknessInsulation+dthicknessInsulation.
+32	34	4	1	1737.0104406520743	9.0	1.0	0.18	Cost not reduced at VStorage+dVStorage.
+32	34	5	1	1597.3917092907827	1.0	9.0	0.18	Cost not reduced at ACollector+dACollector.
+32	34	6	1	1593.2056443672059	1.0	1.0	0.12	Cost not reduced at thicknessInsulation-dthicknessInsulation.
+32	34	7	1	1627.4446758326858	1.0	1.0	0.24	Cost not reduced at thicknessInsulation+dthicknessInsulation.
+30	34	8	1	1583.4573135898	1.0	1.0	0.18	Iteration step did not reduce cost. Reduce step size to '0.5'.
+32	35	1	1	1583.4573135898	1.0	1.0	0.18	Exploration base, Delta = 0.5.
+33	35	2	1	1672.946748972744	5.0	1.0	0.18	Cost not reduced at VStorage+dVStorage.
+34	35	3	1	1580.9795753264034	1.0	5.0	0.18	Cost reduced     at ACollector+dACollector.
+35	35	4	1	1574.4212191639053	1.0	5.0	0.15	Cost reduced     at thicknessInsulation-dthicknessInsulation.
+35	35	5	1	1574.4212191639053	1.0	5.0	0.15	Global search reduced cost.
+35	36	1	1	1601.6439850573108	1.0	9.0	0.12	Exploration base, Delta = 0.5.
+36	36	2	1	1685.839351840359	5.0	9.0	0.12	Cost not reduced at VStorage+dVStorage.
+37	36	3	1	1624.786818709903	1.0	13.0	0.12	Cost not reduced at ACollector+dACollector.
+38	36	4	1	1588.145706776313	1.0	5.0	0.12	Cost reduced     at ACollector-dACollector.
+39	36	5	1	1638.6907759876158	1.0	5.0	0.09	Cost not reduced at thicknessInsulation-dthicknessInsulation.
+39	36	6	1	1574.4212191639053	1.0	5.0	0.15	Cost reduced     at thicknessInsulation+dthicknessInsulation.
+40	36	7	1	1659.619410092101	5.0	5.0	0.15	Cost not reduced at VStorage+dVStorage.
+41	36	8	1	1577.960981508204	1.0	1.0	0.15	Cost not reduced at ACollector-dACollector.
+42	36	9	1	1589.526090667694	1.0	9.0	0.15	Cost not reduced at ACollector+dACollector.
+42	36	10	1	1580.9795753264034	1.0	5.0	0.18	Cost not reduced at thicknessInsulation+dthicknessInsulation.
+42	36	11	1	1588.145706776313	1.0	5.0	0.12	Cost not reduced at thicknessInsulation-dthicknessInsulation.
+35	36	12	1	1574.4212191639053	1.0	5.0	0.15	Iteration step did not reduce cost. Reduce step size to '0.25'.
+42	37	1	1	1574.4212191639053	1.0	5.0	0.15	Exploration base, Delta = 0.25.
+43	37	2	1	1626.311487544774	3.0	5.0	0.15	Cost not reduced at VStorage+dVStorage.
+44	37	3	1	1572.9245452790963	1.0	3.0	0.15	Cost reduced     at ACollector-dACollector.
+45	37	4	1	1573.9860423672055	1.0	3.0	0.165	Cost not reduced at thicknessInsulation+dthicknessInsulation.
+46	37	5	1	1576.9511156130452	1.0	3.0	0.135	Cost not reduced at thicknessInsulation-dthicknessInsulation.
+44	37	6	1	1572.9245452790963	1.0	3.0	0.15	Global search reduced cost.
+46	38	1	1	1577.960981508204	1.0	1.0	0.15	Exploration base, Delta = 0.25.
+47	38	2	1	1630.1004566158836	3.0	1.0	0.15	Cost not reduced at VStorage+dVStorage.
+47	38	3	1	1572.9245452790963	1.0	3.0	0.15	Cost reduced     at ACollector+dACollector.
+47	38	4	1	1573.9860423672055	1.0	3.0	0.165	Cost not reduced at thicknessInsulation+dthicknessInsulation.
+47	38	5	1	1576.9511156130452	1.0	3.0	0.135	Cost not reduced at thicknessInsulation-dthicknessInsulation.
+48	38	6	1	1625.3622711959977	3.0	3.0	0.15	Cost not reduced at VStorage+dVStorage.
+48	38	7	1	1574.4212191639053	1.0	5.0	0.15	Cost not reduced at ACollector+dACollector.
+48	38	8	1	1577.960981508204	1.0	1.0	0.15	Cost not reduced at ACollector-dACollector.
+48	38	9	1	1573.9860423672055	1.0	3.0	0.165	Cost not reduced at thicknessInsulation+dthicknessInsulation.
+48	38	10	1	1576.9511156130452	1.0	3.0	0.135	Cost not reduced at thicknessInsulation-dthicknessInsulation.
+44	38	11	1	1572.9245452790963	1.0	3.0	0.15	Iteration step did not reduce cost. Reduce step size to '0.125'.
+48	39	1	1	1572.9245452790963	1.0	3.0	0.15	Exploration base, Delta = 0.125.
+49	39	2	1	1602.993402843494	2.0	3.0	0.15	Cost not reduced at VStorage+dVStorage.
+50	39	3	1	1572.9880569670772	1.0	4.0	0.15	Cost not reduced at ACollector+dACollector.
+51	39	4	1	1574.5688023431594	1.0	2.0	0.15	Cost not reduced at ACollector-dACollector.
+52	39	5	1	1572.9617968430382	1.0	3.0	0.1575	Cost not reduced at thicknessInsulation+dthicknessInsulation.
+53	39	6	1	1574.3055888142137	1.0	3.0	0.1425	Cost not reduced at thicknessInsulation-dthicknessInsulation.
+53	39	7	1	1602.993402843494	2.0	3.0	0.15	Cost not reduced at VStorage+dVStorage.
+53	39	8	1	1572.9880569670772	1.0	4.0	0.15	Cost not reduced at ACollector+dACollector.
+53	39	9	1	1574.5688023431594	1.0	2.0	0.15	Cost not reduced at ACollector-dACollector.
+53	39	10	1	1572.9617968430382	1.0	3.0	0.1575	Cost not reduced at thicknessInsulation+dthicknessInsulation.
+53	39	11	1	1574.3055888142137	1.0	3.0	0.1425	Cost not reduced at thicknessInsulation-dthicknessInsulation.
+44	39	12	1	1572.9245452790963	1.0	3.0	0.15	Iteration step did not reduce cost. Reduce step size to '0.0625'.
+53	40	1	1	1572.9245452790963	1.0	3.0	0.15	Exploration base, Delta = 0.0625.
+54	40	2	1	1589.1973348531537	1.5	3.0	0.15	Cost not reduced at VStorage+dVStorage.
+55	40	3	1	1572.7668949268327	1.0	3.5	0.15	Cost reduced     at ACollector+dACollector.
+56	40	4	1	1572.730970465774	1.0	3.5	0.15375	Cost reduced     at thicknessInsulation+dthicknessInsulation.
+56	40	5	1	1572.730970465774	1.0	3.5	0.15375	Global search reduced cost.
+57	41	1	1	1572.9570888572557	1.0	4.0	0.1575	Exploration base, Delta = 0.0625.
+58	41	2	1	1589.2773553446195	1.5	4.0	0.1575	Cost not reduced at VStorage+dVStorage.
+59	41	3	1	1573.6688179831929	1.0	4.5	0.1575	Cost not reduced at ACollector+dACollector.
+60	41	4	1	1572.7372539185226	1.0	3.5	0.1575	Cost reduced     at ACollector-dACollector.
+61	41	5	1	1573.2220445974817	1.0	3.5	0.16125	Cost not reduced at thicknessInsulation+dthicknessInsulation.
+61	41	6	1	1572.730970465774	1.0	3.5	0.15375	Cost reduced     at thicknessInsulation-dthicknessInsulation.
+62	41	7	1	1588.8739983997116	1.5	3.5	0.15375	Cost not reduced at VStorage+dVStorage.
+63	41	8	1	1572.8074811211377	1.0	3.0	0.15375	Cost not reduced at ACollector-dACollector.
+64	41	9	1	1572.8913441371537	1.0	4.0	0.15375	Cost not reduced at ACollector+dACollector.
+64	41	10	1	1572.7668949268327	1.0	3.5	0.15	Cost not reduced at thicknessInsulation-dthicknessInsulation.
+64	41	11	1	1572.7372539185226	1.0	3.5	0.1575	Cost not reduced at thicknessInsulation+dthicknessInsulation.
+56	41	12	1	1572.730970465774	1.0	3.5	0.15375	Iteration step did not reduce cost. Maximum number of step reductions reached.
+56	41	13	1	1572.730970465774	1.0	3.5	0.15375	Minimum point.

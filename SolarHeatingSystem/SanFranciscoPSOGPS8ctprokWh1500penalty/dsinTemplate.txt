@@ -102,7 +102,7 @@ int settings(13,1)
 
 
 #    Names of initial variables
-char initialName(5525,55)
+char initialName(5505,55)
 UValueWindows
 UValueFloor
 UValueRoof
@@ -4173,7 +4173,6 @@ collector.vol[1].m_flow_small
 collector.vol[1].allowFlowReversal
 collector.vol[1].V
 collector.vol[1].heatPort.Q_flow
-collector.vol[1].m
 collector.vol[1].rho_start
 _GlobalScope.collector.vol.X_default[1]
 collector.vol[1].state_default.p
@@ -4202,7 +4201,6 @@ collector.vol[2].V
 collector.vol[2].ports[1].h_outflow
 collector.vol[2].ports[1].der(h_outflow)
 collector.vol[2].heatPort.Q_flow
-collector.vol[2].m
 collector.vol[2].rho_start
 collector.vol[2].state_default.p
 collector.vol[2].state_default.T
@@ -4230,7 +4228,6 @@ collector.vol[3].V
 collector.vol[3].ports[1].h_outflow
 collector.vol[3].ports[1].der(h_outflow)
 collector.vol[3].heatPort.Q_flow
-collector.vol[3].m
 collector.vol[3].rho_start
 collector.vol[3].state_default.p
 collector.vol[3].state_default.T
@@ -4258,7 +4255,6 @@ collector.vol[4].V
 collector.vol[4].ports[1].h_outflow
 collector.vol[4].ports[1].der(h_outflow)
 collector.vol[4].heatPort.Q_flow
-collector.vol[4].m
 collector.vol[4].rho_start
 collector.vol[4].state_default.p
 collector.vol[4].state_default.T
@@ -4286,7 +4282,6 @@ collector.vol[5].V
 collector.vol[5].ports[1].h_outflow
 collector.vol[5].ports[1].der(h_outflow)
 collector.vol[5].heatPort.Q_flow
-collector.vol[5].m
 collector.vol[5].rho_start
 collector.vol[5].state_default.p
 collector.vol[5].state_default.T
@@ -4314,7 +4309,6 @@ collector.vol[6].V
 collector.vol[6].ports[1].h_outflow
 collector.vol[6].ports[1].der(h_outflow)
 collector.vol[6].heatPort.Q_flow
-collector.vol[6].m
 collector.vol[6].rho_start
 collector.vol[6].state_default.p
 collector.vol[6].state_default.T
@@ -4342,7 +4336,6 @@ collector.vol[7].V
 collector.vol[7].ports[1].h_outflow
 collector.vol[7].ports[1].der(h_outflow)
 collector.vol[7].heatPort.Q_flow
-collector.vol[7].m
 collector.vol[7].rho_start
 collector.vol[7].state_default.p
 collector.vol[7].state_default.T
@@ -4370,7 +4363,6 @@ collector.vol[8].V
 collector.vol[8].ports[1].h_outflow
 collector.vol[8].ports[1].der(h_outflow)
 collector.vol[8].heatPort.Q_flow
-collector.vol[8].m
 collector.vol[8].rho_start
 collector.vol[8].state_default.p
 collector.vol[8].state_default.T
@@ -4398,7 +4390,6 @@ collector.vol[9].V
 collector.vol[9].ports[1].h_outflow
 collector.vol[9].ports[1].der(h_outflow)
 collector.vol[9].heatPort.Q_flow
-collector.vol[9].m
 collector.vol[9].rho_start
 collector.vol[9].state_default.p
 collector.vol[9].state_default.T
@@ -4424,7 +4415,6 @@ collector.vol[10].m_flow_small
 collector.vol[10].allowFlowReversal
 collector.vol[10].V
 collector.vol[10].heatPort.Q_flow
-collector.vol[10].m
 collector.vol[10].rho_start
 collector.vol[10].state_default.p
 collector.vol[10].state_default.T
@@ -5156,7 +5146,6 @@ collector.vol[1].dynBal.simplify_mWat_flow
 collector.vol[1].dynBal.nPorts
 collector.vol[1].dynBal.use_mWat_flow
 collector.vol[1].dynBal.use_C_flow
-collector.vol[1].dynBal.mOut
 collector.vol[1].dynBal.medium.T
 collector.vol[1].dynBal.medium.d
 collector.vol[1].dynBal.medium.X[1]
@@ -5198,7 +5187,6 @@ collector.vol[2].dynBal.simplify_mWat_flow
 collector.vol[2].dynBal.nPorts
 collector.vol[2].dynBal.use_mWat_flow
 collector.vol[2].dynBal.use_C_flow
-collector.vol[2].dynBal.mOut
 collector.vol[2].dynBal.medium.T
 collector.vol[2].dynBal.medium.d
 collector.vol[2].dynBal.medium.X[1]
@@ -5239,7 +5227,6 @@ collector.vol[3].dynBal.simplify_mWat_flow
 collector.vol[3].dynBal.nPorts
 collector.vol[3].dynBal.use_mWat_flow
 collector.vol[3].dynBal.use_C_flow
-collector.vol[3].dynBal.mOut
 collector.vol[3].dynBal.medium.T
 collector.vol[3].dynBal.medium.d
 collector.vol[3].dynBal.medium.X[1]
@@ -5280,7 +5267,6 @@ collector.vol[4].dynBal.simplify_mWat_flow
 collector.vol[4].dynBal.nPorts
 collector.vol[4].dynBal.use_mWat_flow
 collector.vol[4].dynBal.use_C_flow
-collector.vol[4].dynBal.mOut
 collector.vol[4].dynBal.medium.T
 collector.vol[4].dynBal.medium.d
 collector.vol[4].dynBal.medium.X[1]
@@ -5321,7 +5307,6 @@ collector.vol[5].dynBal.simplify_mWat_flow
 collector.vol[5].dynBal.nPorts
 collector.vol[5].dynBal.use_mWat_flow
 collector.vol[5].dynBal.use_C_flow
-collector.vol[5].dynBal.mOut
 collector.vol[5].dynBal.medium.T
 collector.vol[5].dynBal.medium.d
 collector.vol[5].dynBal.medium.X[1]
@@ -5362,7 +5347,6 @@ collector.vol[6].dynBal.simplify_mWat_flow
 collector.vol[6].dynBal.nPorts
 collector.vol[6].dynBal.use_mWat_flow
 collector.vol[6].dynBal.use_C_flow
-collector.vol[6].dynBal.mOut
 collector.vol[6].dynBal.medium.T
 collector.vol[6].dynBal.medium.d
 collector.vol[6].dynBal.medium.X[1]
@@ -5403,7 +5387,6 @@ collector.vol[7].dynBal.simplify_mWat_flow
 collector.vol[7].dynBal.nPorts
 collector.vol[7].dynBal.use_mWat_flow
 collector.vol[7].dynBal.use_C_flow
-collector.vol[7].dynBal.mOut
 collector.vol[7].dynBal.medium.T
 collector.vol[7].dynBal.medium.d
 collector.vol[7].dynBal.medium.X[1]
@@ -5444,7 +5427,6 @@ collector.vol[8].dynBal.simplify_mWat_flow
 collector.vol[8].dynBal.nPorts
 collector.vol[8].dynBal.use_mWat_flow
 collector.vol[8].dynBal.use_C_flow
-collector.vol[8].dynBal.mOut
 collector.vol[8].dynBal.medium.T
 collector.vol[8].dynBal.medium.d
 collector.vol[8].dynBal.medium.X[1]
@@ -5485,7 +5467,6 @@ collector.vol[9].dynBal.simplify_mWat_flow
 collector.vol[9].dynBal.nPorts
 collector.vol[9].dynBal.use_mWat_flow
 collector.vol[9].dynBal.use_C_flow
-collector.vol[9].dynBal.mOut
 collector.vol[9].dynBal.medium.T
 collector.vol[9].dynBal.medium.d
 collector.vol[9].dynBal.medium.X[1]
@@ -5526,7 +5507,6 @@ collector.vol[10].dynBal.simplify_mWat_flow
 collector.vol[10].dynBal.nPorts
 collector.vol[10].dynBal.use_mWat_flow
 collector.vol[10].dynBal.use_C_flow
-collector.vol[10].dynBal.mOut
 collector.vol[10].dynBal.medium.T
 collector.vol[10].dynBal.medium.d
 collector.vol[10].dynBal.medium.X[1]
@@ -5629,7 +5609,7 @@ weaBus.winSpe
 CPUtime
 EventCounter
 
-double initialValue(5525,6)
+double initialValue(5505,6)
  -1       1                       0                       0                
   1   280   # UValueWindows
  -1 3.4999999999999998E-001       0                       0                
@@ -5640,7 +5620,7 @@ double initialValue(5525,6)
   6   256   # UValueWalls
  -1      %VStorage%                       1                      40                
   1   280   # VStorage
- -1      %ACollector%                       4                      40                
+ -1      %ACollector%                       1                      40                
   1   280   # ACollector
  -1 %thicknessInsulation% 5.9999999999999998E-002 2.9999999999999999E-001
   1   280   # thicknessInsulation
@@ -8560,17 +8540,17 @@ double initialValue(5525,6)
   6   257   # collector.from_dp
   0       0                       0                       0                
   6   257   # collector.linearized
-  0       1                       0                       0                
+  0       0                       0                       0                
   6   257   # collector.AColData
-  0 3.5714285714285713E-003       0                       0                
+  0       0                       0                       0                
   6   256   # collector.V
-  0 6.8000000000000009E+003       0                       0                
+  0       0                       0                       0                
   6   256   # collector.C
   0       0                       0                       0                
   6   257   # collector.use_GSC_in
  -1       0                       0                       0                
   1   280   # collector.GSC_constant
-  0 2.4409999999999998E+000       0                       0                
+  0       0                       0                       0                
   6   256   # collector.A
   0       0                       0                       0                
   6   256   # collector.IAM
@@ -13766,12 +13746,10 @@ double initialValue(5525,6)
   6   256   # collector.vol[1].m_flow_small
   0       1                       0                       0                
   6   257   # collector.vol[1].allowFlowReversal
-  0 3.5714285714285714E-004       0                       0                
+  0       0                       0                       0                
   6   256   # collector.vol[1].V
   0       0                       0                       0                
   6   388   # collector.vol[1].heatPort.Q_flow
-  0 3.5556642857142856E-001       0                       0                
-  6   256   # collector.vol[1].m
   0 9.9558600000000001E+002       0                 1.0000000000000000E+100
   6  1280   # collector.vol[1].rho_start
   0       1                       0                       1                
@@ -13820,7 +13798,7 @@ double initialValue(5525,6)
   6   256   # collector.vol[2].m_flow_small
   0       1                       0                       0                
   6   257   # collector.vol[2].allowFlowReversal
-  0 3.5714285714285714E-004       0                       0                
+  0       0                       0                       0                
   6   256   # collector.vol[2].V
   0       0                 -1.0000000000000000E+010 1.0000000000000000E+010
   6   260   # collector.vol[2].ports[1].h_outflow
@@ -13828,8 +13806,6 @@ double initialValue(5525,6)
   6   260   # collector.vol[2].ports[1].der(h_outflow)
   0       0                       0                       0                
   6   388   # collector.vol[2].heatPort.Q_flow
-  0 3.5556642857142856E-001       0                       0                
-  6   256   # collector.vol[2].m
   0 9.9558600000000001E+002       0                 1.0000000000000000E+100
   6  1280   # collector.vol[2].rho_start
   0 3.0000000000000000E+005       0                 1.0000000000000000E+008
@@ -13876,7 +13852,7 @@ double initialValue(5525,6)
   6   256   # collector.vol[3].m_flow_small
   0       1                       0                       0                
   6   257   # collector.vol[3].allowFlowReversal
-  0 3.5714285714285714E-004       0                       0                
+  0       0                       0                       0                
   6   256   # collector.vol[3].V
   0       0                 -1.0000000000000000E+010 1.0000000000000000E+010
   6   260   # collector.vol[3].ports[1].h_outflow
@@ -13884,8 +13860,6 @@ double initialValue(5525,6)
   6   260   # collector.vol[3].ports[1].der(h_outflow)
   0       0                       0                       0                
   6   388   # collector.vol[3].heatPort.Q_flow
-  0 3.5556642857142856E-001       0                       0                
-  6   256   # collector.vol[3].m
   0 9.9558600000000001E+002       0                 1.0000000000000000E+100
   6  1280   # collector.vol[3].rho_start
   0 3.0000000000000000E+005       0                 1.0000000000000000E+008
@@ -13932,7 +13906,7 @@ double initialValue(5525,6)
   6   256   # collector.vol[4].m_flow_small
   0       1                       0                       0                
   6   257   # collector.vol[4].allowFlowReversal
-  0 3.5714285714285714E-004       0                       0                
+  0       0                       0                       0                
   6   256   # collector.vol[4].V
   0       0                 -1.0000000000000000E+010 1.0000000000000000E+010
   6   260   # collector.vol[4].ports[1].h_outflow
@@ -13940,8 +13914,6 @@ double initialValue(5525,6)
   6   260   # collector.vol[4].ports[1].der(h_outflow)
   0       0                       0                       0                
   6   388   # collector.vol[4].heatPort.Q_flow
-  0 3.5556642857142856E-001       0                       0                
-  6   256   # collector.vol[4].m
   0 9.9558600000000001E+002       0                 1.0000000000000000E+100
   6  1280   # collector.vol[4].rho_start
   0 3.0000000000000000E+005       0                 1.0000000000000000E+008
@@ -13988,7 +13960,7 @@ double initialValue(5525,6)
   6   256   # collector.vol[5].m_flow_small
   0       1                       0                       0                
   6   257   # collector.vol[5].allowFlowReversal
-  0 3.5714285714285714E-004       0                       0                
+  0       0                       0                       0                
   6   256   # collector.vol[5].V
   0       0                 -1.0000000000000000E+010 1.0000000000000000E+010
   6   260   # collector.vol[5].ports[1].h_outflow
@@ -13996,8 +13968,6 @@ double initialValue(5525,6)
   6   260   # collector.vol[5].ports[1].der(h_outflow)
   0       0                       0                       0                
   6   388   # collector.vol[5].heatPort.Q_flow
-  0 3.5556642857142856E-001       0                       0                
-  6   256   # collector.vol[5].m
   0 9.9558600000000001E+002       0                 1.0000000000000000E+100
   6  1280   # collector.vol[5].rho_start
   0 3.0000000000000000E+005       0                 1.0000000000000000E+008
@@ -14044,7 +14014,7 @@ double initialValue(5525,6)
   6   256   # collector.vol[6].m_flow_small
   0       1                       0                       0                
   6   257   # collector.vol[6].allowFlowReversal
-  0 3.5714285714285714E-004       0                       0                
+  0       0                       0                       0                
   6   256   # collector.vol[6].V
   0       0                 -1.0000000000000000E+010 1.0000000000000000E+010
   6   260   # collector.vol[6].ports[1].h_outflow
@@ -14052,8 +14022,6 @@ double initialValue(5525,6)
   6   260   # collector.vol[6].ports[1].der(h_outflow)
   0       0                       0                       0                
   6   388   # collector.vol[6].heatPort.Q_flow
-  0 3.5556642857142856E-001       0                       0                
-  6   256   # collector.vol[6].m
   0 9.9558600000000001E+002       0                 1.0000000000000000E+100
   6  1280   # collector.vol[6].rho_start
   0 3.0000000000000000E+005       0                 1.0000000000000000E+008
@@ -14100,7 +14068,7 @@ double initialValue(5525,6)
   6   256   # collector.vol[7].m_flow_small
   0       1                       0                       0                
   6   257   # collector.vol[7].allowFlowReversal
-  0 3.5714285714285714E-004       0                       0                
+  0       0                       0                       0                
   6   256   # collector.vol[7].V
   0       0                 -1.0000000000000000E+010 1.0000000000000000E+010
   6   260   # collector.vol[7].ports[1].h_outflow
@@ -14108,8 +14076,6 @@ double initialValue(5525,6)
   6   260   # collector.vol[7].ports[1].der(h_outflow)
   0       0                       0                       0                
   6   388   # collector.vol[7].heatPort.Q_flow
-  0 3.5556642857142856E-001       0                       0                
-  6   256   # collector.vol[7].m
   0 9.9558600000000001E+002       0                 1.0000000000000000E+100
   6  1280   # collector.vol[7].rho_start
   0 3.0000000000000000E+005       0                 1.0000000000000000E+008
@@ -14156,7 +14122,7 @@ double initialValue(5525,6)
   6   256   # collector.vol[8].m_flow_small
   0       1                       0                       0                
   6   257   # collector.vol[8].allowFlowReversal
-  0 3.5714285714285714E-004       0                       0                
+  0       0                       0                       0                
   6   256   # collector.vol[8].V
   0       0                 -1.0000000000000000E+010 1.0000000000000000E+010
   6   260   # collector.vol[8].ports[1].h_outflow
@@ -14164,8 +14130,6 @@ double initialValue(5525,6)
   6   260   # collector.vol[8].ports[1].der(h_outflow)
   0       0                       0                       0                
   6   388   # collector.vol[8].heatPort.Q_flow
-  0 3.5556642857142856E-001       0                       0                
-  6   256   # collector.vol[8].m
   0 9.9558600000000001E+002       0                 1.0000000000000000E+100
   6  1280   # collector.vol[8].rho_start
   0 3.0000000000000000E+005       0                 1.0000000000000000E+008
@@ -14212,7 +14176,7 @@ double initialValue(5525,6)
   6   256   # collector.vol[9].m_flow_small
   0       1                       0                       0                
   6   257   # collector.vol[9].allowFlowReversal
-  0 3.5714285714285714E-004       0                       0                
+  0       0                       0                       0                
   6   256   # collector.vol[9].V
   0       0                 -1.0000000000000000E+010 1.0000000000000000E+010
   6   260   # collector.vol[9].ports[1].h_outflow
@@ -14220,8 +14184,6 @@ double initialValue(5525,6)
   6   260   # collector.vol[9].ports[1].der(h_outflow)
   0       0                       0                       0                
   6   388   # collector.vol[9].heatPort.Q_flow
-  0 3.5556642857142856E-001       0                       0                
-  6   256   # collector.vol[9].m
   0 9.9558600000000001E+002       0                 1.0000000000000000E+100
   6  1280   # collector.vol[9].rho_start
   0 3.0000000000000000E+005       0                 1.0000000000000000E+008
@@ -14268,12 +14230,10 @@ double initialValue(5525,6)
   6   256   # collector.vol[10].m_flow_small
   0       1                       0                       0                
   6   257   # collector.vol[10].allowFlowReversal
-  0 3.5714285714285714E-004       0                       0                
+  0       0                       0                       0                
   6   256   # collector.vol[10].V
   0       0                       0                       0                
   6   388   # collector.vol[10].heatPort.Q_flow
-  0 3.5556642857142856E-001       0                       0                
-  6   256   # collector.vol[10].m
   0 9.9558600000000001E+002       0                 1.0000000000000000E+100
   6  1280   # collector.vol[10].rho_start
   0 3.0000000000000000E+005       0                 1.0000000000000000E+008
@@ -14288,84 +14248,84 @@ double initialValue(5525,6)
   6  1280   # collector.vol[10].state_start.T
   0       0                       0                       0                
   6  1281   # collector.vol[10].useSteadyStateTwoPort
-  0 6.8000000000000011E+002       0                       0                
-  6   256   # collector.cp_solid[1].C
-  0     300                       1                   10000                
-  6   256   # collector.cp_solid[1].T
   0       0                       0                       0                
-  6   256   # collector.cp_solid[1].der(T)
+  6   256   # collector.cp_solid[1].C
+ -1     300                       1                   10000                
+  2   272   # collector.cp_solid[1].T
+  0       0                       0                       0                
+  3   256   # collector.cp_solid[1].der(T)
   0       0                       0                       0                
   6   388   # collector.cp_solid[1].port.Q_flow
-  0 6.8000000000000011E+002       0                       0                
-  6   256   # collector.cp_solid[2].C
-  0     300                       1                   10000                
-  6   256   # collector.cp_solid[2].T
   0       0                       0                       0                
-  6   256   # collector.cp_solid[2].der(T)
+  6   256   # collector.cp_solid[2].C
+ -1     300                       1                   10000                
+  2   272   # collector.cp_solid[2].T
+  0       0                       0                       0                
+  3   256   # collector.cp_solid[2].der(T)
   0       0                       0                       0                
   6   388   # collector.cp_solid[2].port.Q_flow
-  0 6.8000000000000011E+002       0                       0                
-  6   256   # collector.cp_solid[3].C
-  0     300                       1                   10000                
-  6   256   # collector.cp_solid[3].T
   0       0                       0                       0                
-  6   256   # collector.cp_solid[3].der(T)
+  6   256   # collector.cp_solid[3].C
+ -1     300                       1                   10000                
+  2   272   # collector.cp_solid[3].T
+  0       0                       0                       0                
+  3   256   # collector.cp_solid[3].der(T)
   0       0                       0                       0                
   6   388   # collector.cp_solid[3].port.Q_flow
-  0 6.8000000000000011E+002       0                       0                
-  6   256   # collector.cp_solid[4].C
-  0     300                       1                   10000                
-  6   256   # collector.cp_solid[4].T
   0       0                       0                       0                
-  6   256   # collector.cp_solid[4].der(T)
+  6   256   # collector.cp_solid[4].C
+ -1     300                       1                   10000                
+  2   272   # collector.cp_solid[4].T
+  0       0                       0                       0                
+  3   256   # collector.cp_solid[4].der(T)
   0       0                       0                       0                
   6   388   # collector.cp_solid[4].port.Q_flow
-  0 6.8000000000000011E+002       0                       0                
-  6   256   # collector.cp_solid[5].C
-  0     300                       1                   10000                
-  6   256   # collector.cp_solid[5].T
   0       0                       0                       0                
-  6   256   # collector.cp_solid[5].der(T)
+  6   256   # collector.cp_solid[5].C
+ -1     300                       1                   10000                
+  2   272   # collector.cp_solid[5].T
+  0       0                       0                       0                
+  3   256   # collector.cp_solid[5].der(T)
   0       0                       0                       0                
   6   388   # collector.cp_solid[5].port.Q_flow
-  0 6.8000000000000011E+002       0                       0                
-  6   256   # collector.cp_solid[6].C
-  0     300                       1                   10000                
-  6   256   # collector.cp_solid[6].T
   0       0                       0                       0                
-  6   256   # collector.cp_solid[6].der(T)
+  6   256   # collector.cp_solid[6].C
+ -1     300                       1                   10000                
+  2   272   # collector.cp_solid[6].T
+  0       0                       0                       0                
+  3   256   # collector.cp_solid[6].der(T)
   0       0                       0                       0                
   6   388   # collector.cp_solid[6].port.Q_flow
-  0 6.8000000000000011E+002       0                       0                
-  6   256   # collector.cp_solid[7].C
-  0     300                       1                   10000                
-  6   256   # collector.cp_solid[7].T
   0       0                       0                       0                
-  6   256   # collector.cp_solid[7].der(T)
+  6   256   # collector.cp_solid[7].C
+ -1     300                       1                   10000                
+  2   272   # collector.cp_solid[7].T
+  0       0                       0                       0                
+  3   256   # collector.cp_solid[7].der(T)
   0       0                       0                       0                
   6   388   # collector.cp_solid[7].port.Q_flow
-  0 6.8000000000000011E+002       0                       0                
-  6   256   # collector.cp_solid[8].C
-  0     300                       1                   10000                
-  6   256   # collector.cp_solid[8].T
   0       0                       0                       0                
-  6   256   # collector.cp_solid[8].der(T)
+  6   256   # collector.cp_solid[8].C
+ -1     300                       1                   10000                
+  2   272   # collector.cp_solid[8].T
+  0       0                       0                       0                
+  3   256   # collector.cp_solid[8].der(T)
   0       0                       0                       0                
   6   388   # collector.cp_solid[8].port.Q_flow
-  0 6.8000000000000011E+002       0                       0                
-  6   256   # collector.cp_solid[9].C
-  0     300                       1                   10000                
-  6   256   # collector.cp_solid[9].T
   0       0                       0                       0                
-  6   256   # collector.cp_solid[9].der(T)
+  6   256   # collector.cp_solid[9].C
+ -1     300                       1                   10000                
+  2   272   # collector.cp_solid[9].T
+  0       0                       0                       0                
+  3   256   # collector.cp_solid[9].der(T)
   0       0                       0                       0                
   6   388   # collector.cp_solid[9].port.Q_flow
-  0 6.8000000000000011E+002       0                       0                
-  6   256   # collector.cp_solid[10].C
-  0     300                       1                   10000                
-  6   256   # collector.cp_solid[10].T
   0       0                       0                       0                
-  6   256   # collector.cp_solid[10].der(T)
+  6   256   # collector.cp_solid[10].C
+ -1     300                       1                   10000                
+  2   272   # collector.cp_solid[10].T
+  0       0                       0                       0                
+  3   256   # collector.cp_solid[10].der(T)
   0       0                       0                       0                
   6   388   # collector.cp_solid[10].port.Q_flow
   0       1                       1                       4                
@@ -15736,8 +15696,6 @@ double initialValue(5525,6)
   6  1281   # collector.vol[1].dynBal.use_mWat_flow
   0       0                       0                       0                
   6  1281   # collector.vol[1].dynBal.use_C_flow
-  0 3.5556642857142856E-001       0                 1.0000000000000000E+100
-  6  1280   # collector.vol[1].dynBal.mOut
   0     300                       1                   10000                
   6  1280   # collector.vol[1].dynBal.medium.T
   0 9.9558600000000001E+002       0                 1.0000000000000000E+100
@@ -15756,11 +15714,11 @@ double initialValue(5525,6)
   6  1280   # collector.vol[1].dynBal.medium.T_degC
   0       0                       0                       0                
   6  1280   # collector.vol[1].dynBal.medium.p_bar
- -1       0                       0                       0                
-  2  1296   # collector.vol[1].dynBal.U
   0       0                       0                       0                
-  3  1280   # collector.vol[1].dynBal.der(U)
-  0 3.5556642857142856E-001       0                 1.0000000000000000E+100
+  6  1280   # collector.vol[1].dynBal.U
+  0       0                       0                       0                
+  6  1280   # collector.vol[1].dynBal.der(U)
+  0       0                       0                 1.0000000000000000E+100
   6  1280   # collector.vol[1].dynBal.m
   0       0                       0                       0                
   6  1280   # collector.vol[1].dynBal.der(m)
@@ -15768,7 +15726,7 @@ double initialValue(5525,6)
   6  1280   # collector.vol[1].dynBal.mb_flow
   0       0                       0                       0                
   6  1280   # collector.vol[1].dynBal.Hb_flow
-  0 3.5714285714285714E-004       0                       0                
+  0       0                       0                       0                
   6  1280   # collector.vol[1].dynBal.fluidVolume
   0       0                       0                       0                
   6  1280   # collector.vol[1].dynBal.CSen
@@ -15820,8 +15778,6 @@ double initialValue(5525,6)
   6  1281   # collector.vol[2].dynBal.use_mWat_flow
   0       0                       0                       0                
   6  1281   # collector.vol[2].dynBal.use_C_flow
-  0 3.5556642857142856E-001       0                 1.0000000000000000E+100
-  6  1280   # collector.vol[2].dynBal.mOut
   0     300                       1                   10000                
   6  1280   # collector.vol[2].dynBal.medium.T
   0 9.9558600000000001E+002       0                 1.0000000000000000E+100
@@ -15840,11 +15796,11 @@ double initialValue(5525,6)
   6  1280   # collector.vol[2].dynBal.medium.T_degC
   0       0                       0                       0                
   6  1280   # collector.vol[2].dynBal.medium.p_bar
- -1       0                       0                       0                
-  2  1296   # collector.vol[2].dynBal.U
   0       0                       0                       0                
-  3  1280   # collector.vol[2].dynBal.der(U)
-  0 3.5556642857142856E-001       0                 1.0000000000000000E+100
+  6  1280   # collector.vol[2].dynBal.U
+  0       0                       0                       0                
+  6  1280   # collector.vol[2].dynBal.der(U)
+  0       0                       0                 1.0000000000000000E+100
   6  1280   # collector.vol[2].dynBal.m
   0       0                       0                       0                
   6  1280   # collector.vol[2].dynBal.der(m)
@@ -15852,7 +15808,7 @@ double initialValue(5525,6)
   6  1280   # collector.vol[2].dynBal.mb_flow
   0       0                       0                       0                
   6  1280   # collector.vol[2].dynBal.Hb_flow
-  0 3.5714285714285714E-004       0                       0                
+  0       0                       0                       0                
   6  1280   # collector.vol[2].dynBal.fluidVolume
   0       0                       0                       0                
   6  1280   # collector.vol[2].dynBal.CSen
@@ -15902,8 +15858,6 @@ double initialValue(5525,6)
   6  1281   # collector.vol[3].dynBal.use_mWat_flow
   0       0                       0                       0                
   6  1281   # collector.vol[3].dynBal.use_C_flow
-  0 3.5556642857142856E-001       0                 1.0000000000000000E+100
-  6  1280   # collector.vol[3].dynBal.mOut
   0     300                       1                   10000                
   6  1280   # collector.vol[3].dynBal.medium.T
   0 9.9558600000000001E+002       0                 1.0000000000000000E+100
@@ -15922,11 +15876,11 @@ double initialValue(5525,6)
   6  1280   # collector.vol[3].dynBal.medium.T_degC
   0       0                       0                       0                
   6  1280   # collector.vol[3].dynBal.medium.p_bar
- -1       0                       0                       0                
-  2  1296   # collector.vol[3].dynBal.U
   0       0                       0                       0                
-  3  1280   # collector.vol[3].dynBal.der(U)
-  0 3.5556642857142856E-001       0                 1.0000000000000000E+100
+  6  1280   # collector.vol[3].dynBal.U
+  0       0                       0                       0                
+  6  1280   # collector.vol[3].dynBal.der(U)
+  0       0                       0                 1.0000000000000000E+100
   6  1280   # collector.vol[3].dynBal.m
   0       0                       0                       0                
   6  1280   # collector.vol[3].dynBal.der(m)
@@ -15934,7 +15888,7 @@ double initialValue(5525,6)
   6  1280   # collector.vol[3].dynBal.mb_flow
   0       0                       0                       0                
   6  1280   # collector.vol[3].dynBal.Hb_flow
-  0 3.5714285714285714E-004       0                       0                
+  0       0                       0                       0                
   6  1280   # collector.vol[3].dynBal.fluidVolume
   0       0                       0                       0                
   6  1280   # collector.vol[3].dynBal.CSen
@@ -15984,8 +15938,6 @@ double initialValue(5525,6)
   6  1281   # collector.vol[4].dynBal.use_mWat_flow
   0       0                       0                       0                
   6  1281   # collector.vol[4].dynBal.use_C_flow
-  0 3.5556642857142856E-001       0                 1.0000000000000000E+100
-  6  1280   # collector.vol[4].dynBal.mOut
   0     300                       1                   10000                
   6  1280   # collector.vol[4].dynBal.medium.T
   0 9.9558600000000001E+002       0                 1.0000000000000000E+100
@@ -16004,11 +15956,11 @@ double initialValue(5525,6)
   6  1280   # collector.vol[4].dynBal.medium.T_degC
   0       0                       0                       0                
   6  1280   # collector.vol[4].dynBal.medium.p_bar
- -1       0                       0                       0                
-  2  1296   # collector.vol[4].dynBal.U
   0       0                       0                       0                
-  3  1280   # collector.vol[4].dynBal.der(U)
-  0 3.5556642857142856E-001       0                 1.0000000000000000E+100
+  6  1280   # collector.vol[4].dynBal.U
+  0       0                       0                       0                
+  6  1280   # collector.vol[4].dynBal.der(U)
+  0       0                       0                 1.0000000000000000E+100
   6  1280   # collector.vol[4].dynBal.m
   0       0                       0                       0                
   6  1280   # collector.vol[4].dynBal.der(m)
@@ -16016,7 +15968,7 @@ double initialValue(5525,6)
   6  1280   # collector.vol[4].dynBal.mb_flow
   0       0                       0                       0                
   6  1280   # collector.vol[4].dynBal.Hb_flow
-  0 3.5714285714285714E-004       0                       0                
+  0       0                       0                       0                
   6  1280   # collector.vol[4].dynBal.fluidVolume
   0       0                       0                       0                
   6  1280   # collector.vol[4].dynBal.CSen
@@ -16066,8 +16018,6 @@ double initialValue(5525,6)
   6  1281   # collector.vol[5].dynBal.use_mWat_flow
   0       0                       0                       0                
   6  1281   # collector.vol[5].dynBal.use_C_flow
-  0 3.5556642857142856E-001       0                 1.0000000000000000E+100
-  6  1280   # collector.vol[5].dynBal.mOut
   0     300                       1                   10000                
   6  1280   # collector.vol[5].dynBal.medium.T
   0 9.9558600000000001E+002       0                 1.0000000000000000E+100
@@ -16086,11 +16036,11 @@ double initialValue(5525,6)
   6  1280   # collector.vol[5].dynBal.medium.T_degC
   0       0                       0                       0                
   6  1280   # collector.vol[5].dynBal.medium.p_bar
- -1       0                       0                       0                
-  2  1296   # collector.vol[5].dynBal.U
   0       0                       0                       0                
-  3  1280   # collector.vol[5].dynBal.der(U)
-  0 3.5556642857142856E-001       0                 1.0000000000000000E+100
+  6  1280   # collector.vol[5].dynBal.U
+  0       0                       0                       0                
+  6  1280   # collector.vol[5].dynBal.der(U)
+  0       0                       0                 1.0000000000000000E+100
   6  1280   # collector.vol[5].dynBal.m
   0       0                       0                       0                
   6  1280   # collector.vol[5].dynBal.der(m)
@@ -16098,7 +16048,7 @@ double initialValue(5525,6)
   6  1280   # collector.vol[5].dynBal.mb_flow
   0       0                       0                       0                
   6  1280   # collector.vol[5].dynBal.Hb_flow
-  0 3.5714285714285714E-004       0                       0                
+  0       0                       0                       0                
   6  1280   # collector.vol[5].dynBal.fluidVolume
   0       0                       0                       0                
   6  1280   # collector.vol[5].dynBal.CSen
@@ -16148,8 +16098,6 @@ double initialValue(5525,6)
   6  1281   # collector.vol[6].dynBal.use_mWat_flow
   0       0                       0                       0                
   6  1281   # collector.vol[6].dynBal.use_C_flow
-  0 3.5556642857142856E-001       0                 1.0000000000000000E+100
-  6  1280   # collector.vol[6].dynBal.mOut
   0     300                       1                   10000                
   6  1280   # collector.vol[6].dynBal.medium.T
   0 9.9558600000000001E+002       0                 1.0000000000000000E+100
@@ -16168,11 +16116,11 @@ double initialValue(5525,6)
   6  1280   # collector.vol[6].dynBal.medium.T_degC
   0       0                       0                       0                
   6  1280   # collector.vol[6].dynBal.medium.p_bar
- -1       0                       0                       0                
-  2  1296   # collector.vol[6].dynBal.U
   0       0                       0                       0                
-  3  1280   # collector.vol[6].dynBal.der(U)
-  0 3.5556642857142856E-001       0                 1.0000000000000000E+100
+  6  1280   # collector.vol[6].dynBal.U
+  0       0                       0                       0                
+  6  1280   # collector.vol[6].dynBal.der(U)
+  0       0                       0                 1.0000000000000000E+100
   6  1280   # collector.vol[6].dynBal.m
   0       0                       0                       0                
   6  1280   # collector.vol[6].dynBal.der(m)
@@ -16180,7 +16128,7 @@ double initialValue(5525,6)
   6  1280   # collector.vol[6].dynBal.mb_flow
   0       0                       0                       0                
   6  1280   # collector.vol[6].dynBal.Hb_flow
-  0 3.5714285714285714E-004       0                       0                
+  0       0                       0                       0                
   6  1280   # collector.vol[6].dynBal.fluidVolume
   0       0                       0                       0                
   6  1280   # collector.vol[6].dynBal.CSen
@@ -16230,8 +16178,6 @@ double initialValue(5525,6)
   6  1281   # collector.vol[7].dynBal.use_mWat_flow
   0       0                       0                       0                
   6  1281   # collector.vol[7].dynBal.use_C_flow
-  0 3.5556642857142856E-001       0                 1.0000000000000000E+100
-  6  1280   # collector.vol[7].dynBal.mOut
   0     300                       1                   10000                
   6  1280   # collector.vol[7].dynBal.medium.T
   0 9.9558600000000001E+002       0                 1.0000000000000000E+100
@@ -16250,11 +16196,11 @@ double initialValue(5525,6)
   6  1280   # collector.vol[7].dynBal.medium.T_degC
   0       0                       0                       0                
   6  1280   # collector.vol[7].dynBal.medium.p_bar
- -1       0                       0                       0                
-  2  1296   # collector.vol[7].dynBal.U
   0       0                       0                       0                
-  3  1280   # collector.vol[7].dynBal.der(U)
-  0 3.5556642857142856E-001       0                 1.0000000000000000E+100
+  6  1280   # collector.vol[7].dynBal.U
+  0       0                       0                       0                
+  6  1280   # collector.vol[7].dynBal.der(U)
+  0       0                       0                 1.0000000000000000E+100
   6  1280   # collector.vol[7].dynBal.m
   0       0                       0                       0                
   6  1280   # collector.vol[7].dynBal.der(m)
@@ -16262,7 +16208,7 @@ double initialValue(5525,6)
   6  1280   # collector.vol[7].dynBal.mb_flow
   0       0                       0                       0                
   6  1280   # collector.vol[7].dynBal.Hb_flow
-  0 3.5714285714285714E-004       0                       0                
+  0       0                       0                       0                
   6  1280   # collector.vol[7].dynBal.fluidVolume
   0       0                       0                       0                
   6  1280   # collector.vol[7].dynBal.CSen
@@ -16312,8 +16258,6 @@ double initialValue(5525,6)
   6  1281   # collector.vol[8].dynBal.use_mWat_flow
   0       0                       0                       0                
   6  1281   # collector.vol[8].dynBal.use_C_flow
-  0 3.5556642857142856E-001       0                 1.0000000000000000E+100
-  6  1280   # collector.vol[8].dynBal.mOut
   0     300                       1                   10000                
   6  1280   # collector.vol[8].dynBal.medium.T
   0 9.9558600000000001E+002       0                 1.0000000000000000E+100
@@ -16332,11 +16276,11 @@ double initialValue(5525,6)
   6  1280   # collector.vol[8].dynBal.medium.T_degC
   0       0                       0                       0                
   6  1280   # collector.vol[8].dynBal.medium.p_bar
- -1       0                       0                       0                
-  2  1296   # collector.vol[8].dynBal.U
   0       0                       0                       0                
-  3  1280   # collector.vol[8].dynBal.der(U)
-  0 3.5556642857142856E-001       0                 1.0000000000000000E+100
+  6  1280   # collector.vol[8].dynBal.U
+  0       0                       0                       0                
+  6  1280   # collector.vol[8].dynBal.der(U)
+  0       0                       0                 1.0000000000000000E+100
   6  1280   # collector.vol[8].dynBal.m
   0       0                       0                       0                
   6  1280   # collector.vol[8].dynBal.der(m)
@@ -16344,7 +16288,7 @@ double initialValue(5525,6)
   6  1280   # collector.vol[8].dynBal.mb_flow
   0       0                       0                       0                
   6  1280   # collector.vol[8].dynBal.Hb_flow
-  0 3.5714285714285714E-004       0                       0                
+  0       0                       0                       0                
   6  1280   # collector.vol[8].dynBal.fluidVolume
   0       0                       0                       0                
   6  1280   # collector.vol[8].dynBal.CSen
@@ -16394,8 +16338,6 @@ double initialValue(5525,6)
   6  1281   # collector.vol[9].dynBal.use_mWat_flow
   0       0                       0                       0                
   6  1281   # collector.vol[9].dynBal.use_C_flow
-  0 3.5556642857142856E-001       0                 1.0000000000000000E+100
-  6  1280   # collector.vol[9].dynBal.mOut
   0     300                       1                   10000                
   6  1280   # collector.vol[9].dynBal.medium.T
   0 9.9558600000000001E+002       0                 1.0000000000000000E+100
@@ -16414,11 +16356,11 @@ double initialValue(5525,6)
   6  1280   # collector.vol[9].dynBal.medium.T_degC
   0       0                       0                       0                
   6  1280   # collector.vol[9].dynBal.medium.p_bar
- -1       0                       0                       0                
-  2  1296   # collector.vol[9].dynBal.U
   0       0                       0                       0                
-  3  1280   # collector.vol[9].dynBal.der(U)
-  0 3.5556642857142856E-001       0                 1.0000000000000000E+100
+  6  1280   # collector.vol[9].dynBal.U
+  0       0                       0                       0                
+  6  1280   # collector.vol[9].dynBal.der(U)
+  0       0                       0                 1.0000000000000000E+100
   6  1280   # collector.vol[9].dynBal.m
   0       0                       0                       0                
   6  1280   # collector.vol[9].dynBal.der(m)
@@ -16426,7 +16368,7 @@ double initialValue(5525,6)
   6  1280   # collector.vol[9].dynBal.mb_flow
   0       0                       0                       0                
   6  1280   # collector.vol[9].dynBal.Hb_flow
-  0 3.5714285714285714E-004       0                       0                
+  0       0                       0                       0                
   6  1280   # collector.vol[9].dynBal.fluidVolume
   0       0                       0                       0                
   6  1280   # collector.vol[9].dynBal.CSen
@@ -16476,8 +16418,6 @@ double initialValue(5525,6)
   6  1281   # collector.vol[10].dynBal.use_mWat_flow
   0       0                       0                       0                
   6  1281   # collector.vol[10].dynBal.use_C_flow
-  0 3.5556642857142856E-001       0                 1.0000000000000000E+100
-  6  1280   # collector.vol[10].dynBal.mOut
   0     300                       1                   10000                
   6  1280   # collector.vol[10].dynBal.medium.T
   0 9.9558600000000001E+002       0                 1.0000000000000000E+100
@@ -16496,11 +16436,11 @@ double initialValue(5525,6)
   6  1280   # collector.vol[10].dynBal.medium.T_degC
   0       0                       0                       0                
   6  1280   # collector.vol[10].dynBal.medium.p_bar
- -1       0                       0                       0                
-  2  1296   # collector.vol[10].dynBal.U
   0       0                       0                       0                
-  3  1280   # collector.vol[10].dynBal.der(U)
-  0 3.5556642857142856E-001       0                 1.0000000000000000E+100
+  6  1280   # collector.vol[10].dynBal.U
+  0       0                       0                       0                
+  6  1280   # collector.vol[10].dynBal.der(U)
+  0       0                       0                 1.0000000000000000E+100
   6  1280   # collector.vol[10].dynBal.m
   0       0                       0                       0                
   6  1280   # collector.vol[10].dynBal.der(m)
@@ -16508,7 +16448,7 @@ double initialValue(5525,6)
   6  1280   # collector.vol[10].dynBal.mb_flow
   0       0                       0                       0                
   6  1280   # collector.vol[10].dynBal.Hb_flow
-  0 3.5714285714285714E-004       0                       0                
+  0       0                       0                       0                
   6  1280   # collector.vol[10].dynBal.fluidVolume
   0       0                       0                       0                
   6  1280   # collector.vol[10].dynBal.CSen
@@ -16730,7 +16670,7 @@ double initialValue(5525,6)
 #   nominal value (and maybe minimum and maximum values given in 
 #   column 3 and 4). If these values are zero, scale(i)=1 is used).
 #
-char initialDescription(5525,214)
+char initialDescription(5505,214)
 
 
 
@@ -20801,7 +20741,6 @@ Small mass flow rate for regularization of zero flow [kg/s]
 = true to allow flow reversal in medium, false restricts to design direction (ports[1] -> ports[2]). Used only if model has two ports. [:#(type=Boolean)]
 Volume [m3]
 Heat flow rate (positive if flowing from outside into the component) [W]
-Mass of the component [kg]
 Density, used to compute start and guess values [kg/m3|g/cm3]
 Default value for mass fractions of medium (for initialization) [kg/kg]
 Absolute pressure of medium [Pa|bar]
@@ -20830,7 +20769,6 @@ Volume [m3]
 Specific thermodynamic enthalpy close to the connection point if m_flow < 0 [J/kg]
 der(Specific thermodynamic enthalpy close to the connection point if m_flow < 0) [m2/s3]
 Heat flow rate (positive if flowing from outside into the component) [W]
-Mass of the component [kg]
 Density, used to compute start and guess values [kg/m3|g/cm3]
 Absolute pressure of medium [Pa|bar]
 Temperature of medium [K|degC]
@@ -20858,7 +20796,6 @@ Volume [m3]
 Specific thermodynamic enthalpy close to the connection point if m_flow < 0 [J/kg]
 der(Specific thermodynamic enthalpy close to the connection point if m_flow < 0) [m2/s3]
 Heat flow rate (positive if flowing from outside into the component) [W]
-Mass of the component [kg]
 Density, used to compute start and guess values [kg/m3|g/cm3]
 Absolute pressure of medium [Pa|bar]
 Temperature of medium [K|degC]
@@ -20886,7 +20823,6 @@ Volume [m3]
 Specific thermodynamic enthalpy close to the connection point if m_flow < 0 [J/kg]
 der(Specific thermodynamic enthalpy close to the connection point if m_flow < 0) [m2/s3]
 Heat flow rate (positive if flowing from outside into the component) [W]
-Mass of the component [kg]
 Density, used to compute start and guess values [kg/m3|g/cm3]
 Absolute pressure of medium [Pa|bar]
 Temperature of medium [K|degC]
@@ -20914,7 +20850,6 @@ Volume [m3]
 Specific thermodynamic enthalpy close to the connection point if m_flow < 0 [J/kg]
 der(Specific thermodynamic enthalpy close to the connection point if m_flow < 0) [m2/s3]
 Heat flow rate (positive if flowing from outside into the component) [W]
-Mass of the component [kg]
 Density, used to compute start and guess values [kg/m3|g/cm3]
 Absolute pressure of medium [Pa|bar]
 Temperature of medium [K|degC]
@@ -20942,7 +20877,6 @@ Volume [m3]
 Specific thermodynamic enthalpy close to the connection point if m_flow < 0 [J/kg]
 der(Specific thermodynamic enthalpy close to the connection point if m_flow < 0) [m2/s3]
 Heat flow rate (positive if flowing from outside into the component) [W]
-Mass of the component [kg]
 Density, used to compute start and guess values [kg/m3|g/cm3]
 Absolute pressure of medium [Pa|bar]
 Temperature of medium [K|degC]
@@ -20970,7 +20904,6 @@ Volume [m3]
 Specific thermodynamic enthalpy close to the connection point if m_flow < 0 [J/kg]
 der(Specific thermodynamic enthalpy close to the connection point if m_flow < 0) [m2/s3]
 Heat flow rate (positive if flowing from outside into the component) [W]
-Mass of the component [kg]
 Density, used to compute start and guess values [kg/m3|g/cm3]
 Absolute pressure of medium [Pa|bar]
 Temperature of medium [K|degC]
@@ -20998,7 +20931,6 @@ Volume [m3]
 Specific thermodynamic enthalpy close to the connection point if m_flow < 0 [J/kg]
 der(Specific thermodynamic enthalpy close to the connection point if m_flow < 0) [m2/s3]
 Heat flow rate (positive if flowing from outside into the component) [W]
-Mass of the component [kg]
 Density, used to compute start and guess values [kg/m3|g/cm3]
 Absolute pressure of medium [Pa|bar]
 Temperature of medium [K|degC]
@@ -21026,7 +20958,6 @@ Volume [m3]
 Specific thermodynamic enthalpy close to the connection point if m_flow < 0 [J/kg]
 der(Specific thermodynamic enthalpy close to the connection point if m_flow < 0) [m2/s3]
 Heat flow rate (positive if flowing from outside into the component) [W]
-Mass of the component [kg]
 Density, used to compute start and guess values [kg/m3|g/cm3]
 Absolute pressure of medium [Pa|bar]
 Temperature of medium [K|degC]
@@ -21052,7 +20983,6 @@ Small mass flow rate for regularization of zero flow [kg/s]
 = true to allow flow reversal in medium, false restricts to design direction (ports[1] -> ports[2]). Used only if model has two ports. [:#(type=Boolean)]
 Volume [m3]
 Heat flow rate (positive if flowing from outside into the component) [W]
-Mass of the component [kg]
 Density, used to compute start and guess values [kg/m3|g/cm3]
 Absolute pressure of medium [Pa|bar]
 Temperature of medium [K|degC]
@@ -21784,7 +21714,6 @@ Set to true to cause port_a.m_flow + port_b.m_flow = 0 even if mWat_flow is non-
 Number of ports [:#(type=Integer)]
 Set to true to enable input connector for moisture mass flow rate [:#(type=Boolean)]
 Set to true to enable input connector for trace substance [:#(type=Boolean)]
-Mass of the component [kg]
 Temperature of medium [K|degC]
 Density of medium [kg/m3|g/cm3]
 Mass fractions (= (component mass)/total mass  m_i/m) [1]
@@ -21826,7 +21755,6 @@ Set to true to cause port_a.m_flow + port_b.m_flow = 0 even if mWat_flow is non-
 Number of ports [:#(type=Integer)]
 Set to true to enable input connector for moisture mass flow rate [:#(type=Boolean)]
 Set to true to enable input connector for trace substance [:#(type=Boolean)]
-Mass of the component [kg]
 Temperature of medium [K|degC]
 Density of medium [kg/m3|g/cm3]
 Mass fractions (= (component mass)/total mass  m_i/m) [1]
@@ -21867,7 +21795,6 @@ Set to true to cause port_a.m_flow + port_b.m_flow = 0 even if mWat_flow is non-
 Number of ports [:#(type=Integer)]
 Set to true to enable input connector for moisture mass flow rate [:#(type=Boolean)]
 Set to true to enable input connector for trace substance [:#(type=Boolean)]
-Mass of the component [kg]
 Temperature of medium [K|degC]
 Density of medium [kg/m3|g/cm3]
 Mass fractions (= (component mass)/total mass  m_i/m) [1]
@@ -21908,7 +21835,6 @@ Set to true to cause port_a.m_flow + port_b.m_flow = 0 even if mWat_flow is non-
 Number of ports [:#(type=Integer)]
 Set to true to enable input connector for moisture mass flow rate [:#(type=Boolean)]
 Set to true to enable input connector for trace substance [:#(type=Boolean)]
-Mass of the component [kg]
 Temperature of medium [K|degC]
 Density of medium [kg/m3|g/cm3]
 Mass fractions (= (component mass)/total mass  m_i/m) [1]
@@ -21949,7 +21875,6 @@ Set to true to cause port_a.m_flow + port_b.m_flow = 0 even if mWat_flow is non-
 Number of ports [:#(type=Integer)]
 Set to true to enable input connector for moisture mass flow rate [:#(type=Boolean)]
 Set to true to enable input connector for trace substance [:#(type=Boolean)]
-Mass of the component [kg]
 Temperature of medium [K|degC]
 Density of medium [kg/m3|g/cm3]
 Mass fractions (= (component mass)/total mass  m_i/m) [1]
@@ -21990,7 +21915,6 @@ Set to true to cause port_a.m_flow + port_b.m_flow = 0 even if mWat_flow is non-
 Number of ports [:#(type=Integer)]
 Set to true to enable input connector for moisture mass flow rate [:#(type=Boolean)]
 Set to true to enable input connector for trace substance [:#(type=Boolean)]
-Mass of the component [kg]
 Temperature of medium [K|degC]
 Density of medium [kg/m3|g/cm3]
 Mass fractions (= (component mass)/total mass  m_i/m) [1]
@@ -22031,7 +21955,6 @@ Set to true to cause port_a.m_flow + port_b.m_flow = 0 even if mWat_flow is non-
 Number of ports [:#(type=Integer)]
 Set to true to enable input connector for moisture mass flow rate [:#(type=Boolean)]
 Set to true to enable input connector for trace substance [:#(type=Boolean)]
-Mass of the component [kg]
 Temperature of medium [K|degC]
 Density of medium [kg/m3|g/cm3]
 Mass fractions (= (component mass)/total mass  m_i/m) [1]
@@ -22072,7 +21995,6 @@ Set to true to cause port_a.m_flow + port_b.m_flow = 0 even if mWat_flow is non-
 Number of ports [:#(type=Integer)]
 Set to true to enable input connector for moisture mass flow rate [:#(type=Boolean)]
 Set to true to enable input connector for trace substance [:#(type=Boolean)]
-Mass of the component [kg]
 Temperature of medium [K|degC]
 Density of medium [kg/m3|g/cm3]
 Mass fractions (= (component mass)/total mass  m_i/m) [1]
@@ -22113,7 +22035,6 @@ Set to true to cause port_a.m_flow + port_b.m_flow = 0 even if mWat_flow is non-
 Number of ports [:#(type=Integer)]
 Set to true to enable input connector for moisture mass flow rate [:#(type=Boolean)]
 Set to true to enable input connector for trace substance [:#(type=Boolean)]
-Mass of the component [kg]
 Temperature of medium [K|degC]
 Density of medium [kg/m3|g/cm3]
 Mass fractions (= (component mass)/total mass  m_i/m) [1]
@@ -22154,7 +22075,6 @@ Set to true to cause port_a.m_flow + port_b.m_flow = 0 even if mWat_flow is non-
 Number of ports [:#(type=Integer)]
 Set to true to enable input connector for moisture mass flow rate [:#(type=Boolean)]
 Set to true to enable input connector for trace substance [:#(type=Boolean)]
-Mass of the component [kg]
 Temperature of medium [K|degC]
 Density of medium [kg/m3|g/cm3]
 Mass fractions (= (component mass)/total mass  m_i/m) [1]

@@ -7,11 +7,11 @@ model SystemModel
   parameter Real UValueRoof = 0.34;
   parameter Real UValueWalls = 1.0/(1.0/25.0+0.2/1.35+thicknessInsulation/0.04+1.0/7.692);
   // Optimization parameters
-  parameter Modelica.SIunits.Volume VStorage(min = 1.0, max = 40.0) = 10.0
+  parameter Modelica.SIunits.Volume VStorage(min = 1.0, max = 40.0) = 1.0
     annotation(Evaluate=false);
-  parameter Modelica.SIunits.Area ACollector(min = 4.0, max = 40.0) = 20.0
+  parameter Modelica.SIunits.Area ACollector(min = 4.0, max = 40.0) = 3.5
     annotation(Evaluate=false);
-  parameter Modelica.SIunits.Length thicknessInsulation(min = 0.06, max = 0.30) = 0.1
+  parameter Modelica.SIunits.Length thicknessInsulation(min = 0.06, max = 0.30) = 0.15375
     annotation(Evaluate=false);
   // Optimization parameters
   parameter Real lifetimeCollector(unit = "a") = 20.0;
@@ -24,7 +24,7 @@ model SystemModel
   parameter Real costInsulation(unit = "Euro/a") = sum(building.AExt)*(2.431*thicknessInsulation*100.0+87.35)/lifetimeInsulation
     annotation(Documentation(info="<html><p>BMVBS-Online-Publikation, Nr. 07/2012 Kosten energierelevanter Bau- und Anlagenteile bei der energetischen Modernisierung von WohngebÃÂ¤uden</p>/html>"));
   parameter Real solarfractionSet(unit = "-") = 0.5;
-  parameter Real penaltyFactor(unit = "Euro/a") = 500.0;
+  parameter Real penaltyFactor(unit = "Euro/a") = 0.0;
   Modelica.SIunits.Energy QHeater(start = 0.0);
   Modelica.SIunits.Energy QRadiator(start = 0.0001);
   Real solarfraction(unit = "-");
@@ -226,11 +226,11 @@ model SystemModel
     annotation (Placement(transformation(extent={{-16,48},{-4,60}})));
   Annex60.BoundaryConditions.WeatherData.ReaderTMY3 weaDat(
     calTSky=Annex60.BoundaryConditions.Types.SkyTemperatureCalculation.HorizontalRadiation,
-    filNam="modelica://Annex60/Resources/weatherdata/USA_IL_Chicago-OHare.Intl.AP.725300_TMY3.mos",
+    filNam="modelica://Annex60/Resources/weatherdata/USA_CA_San.Francisco.Intl.AP.724940_TMY3.mos",
     computeWetBulbTemperature=false)
     "Weather data reader"
     annotation (Placement(transformation(extent={{-96,180},{-76,200}})));
-    //filNam= "modelica://Annex60/Resources/weatherdata/USA_CA_San.Francisco.Intl.AP.724940_TMY3.mos",
+    //filNam= "modelica://Annex60/Resources/weatherdata/USA_IL_Chicago-OHare.Intl.AP.725300_TMY3.mos",
   Annex60.BoundaryConditions.SolarIrradiation.DiffusePerez HDifTil[4](
     each outSkyCon=true,
     each outGroCon=true,
@@ -423,6 +423,10 @@ model SystemModel
     annotation (Placement(transformation(extent={{110,200},{130,220}})));
   Modelica.Blocks.Sources.RealExpression realExpression(y=costfunction)
     annotation (Placement(transformation(extent={{80,218},{100,238}})));
+initial algorithm
+ if ("dataOutput.txt" <> "") then
+  Modelica.Utilities.Files.removeFile("dataOutput.txt");
+ end if;
 equation
   der(QRadiator) = - radiator.Q_flow;
   der(QHeater) = heater.Q_flow;
@@ -700,7 +704,16 @@ equation
 
   connect(realExpression.y, genOptInterface.costFunction)
     annotation (Line(points={{101,228},{120,228},{120,218}}, color={0,0,127}));
-
+  when terminal() then
+    Modelica.Utilities.Streams.print("solarfraction = , " +  realString(number=solarfractionEval, minimumWidth=10, precision=20), "dataOutput.txt");
+    Modelica.Utilities.Streams.print("costStorage = , " +  realString(number=costStorage, minimumWidth=10, precision=20), "dataOutput.txt");
+    Modelica.Utilities.Streams.print("costCollector = , " +  realString(number=costCollector, minimumWidth=10, precision=20), "dataOutput.txt");
+    Modelica.Utilities.Streams.print("costInsulation = , " +  realString(number=costInsulation, minimumWidth=10, precision=20), "dataOutput.txt");
+    Modelica.Utilities.Streams.print("costHeaterEnergy = , " +  realString(number=costHeaterEnergy, minimumWidth=10, precision=20), "dataOutput.txt");
+    Modelica.Utilities.Streams.print("costPenalty = , " +  realString(number=costPenalty, minimumWidth=10, precision=20), "dataOutput.txt");
+    Modelica.Utilities.Streams.print("heaterEnergy = , " +  realString(number=QHeaterEval, minimumWidth=10, precision=20), "dataOutput.txt");
+    Modelica.Utilities.Streams.print("radiatorEnergy = , " +  realString(number=QRadiatorEval, minimumWidth=10, precision=20), "dataOutput.txt");
+  end when;
   //annotation(Documentation(info="one year"),experiment(StartTime=15638400, StopTime=47174400),
   //annotation(Documentation(info="three years"),experiment(StartTime=15638400, StopTime=110246400),
   annotation(Documentation(info="two years"),experiment(StartTime=15638400, StopTime=78710400),

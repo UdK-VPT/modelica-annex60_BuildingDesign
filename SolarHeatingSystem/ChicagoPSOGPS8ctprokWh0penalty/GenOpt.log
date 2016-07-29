@@ -17,12 +17,12 @@ the Swiss National Energy Fund (NEFF), and
 the Swiss National Science Foundation (SNSF).
 _______________________________________________________________
 
-Configuration file : C:\Users\alexa\AI_DATA\ModelicaLibraries\modelica-annex60_BuildingDesign\SolarHeatingSystem\optWinXP.ini
-Command file       : C:\Users\alexa\AI_DATA\ModelicaLibraries\modelica-annex60_BuildingDesign\SolarHeatingSystem\command.txt
+Configuration file : C:\Users\alexa\Desktop\modelica-annex60_BuildingDesign C0\SolarHeatingSystem\optWinXP.ini
+Command file       : C:\Users\alexa\Desktop\modelica-annex60_BuildingDesign C0\SolarHeatingSystem\command.txt
 
-Optimization started  at : Mon Jul 25 15:00:14 CEST 2016
-Optimization finished at : Mon Jul 25 16:04:51 CEST 2016
-Execution time           :            01:04:38
+Optimization started  at : Fri Jul 29 09:47:28 CEST 2016
+Optimization finished at : Fri Jul 29 10:33:03 CEST 2016
+Execution time           :            00:45:35
 _______________________________________________________________
 
 Optimization completed successfully.
