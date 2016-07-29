@@ -158,6 +158,7 @@ model SystemModel
     m_flow_nominal=m_flow_nominal,
     dp_nominal=10,
     redeclare SolarHeatingSystem.Components.SolarThermal.Data.Collectors.ComercialsCollectors.FlatPlate.AgenaAZUR8plus_AC28H collectorData,
+    AColData=false,
     height=1,
     width=ACollector,
     T_start=293.15)
